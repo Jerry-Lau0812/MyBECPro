@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="gb2312"?>
+<MMAL>
+<ENABLERES>1</ENABLERES>
+<ENABLECUR>1</ENABLECUR>
+
+ <LEDRESS>
+  <LEDRES>
+	
+	<BIN>L-2C-X2</BIN>
+	<BITRONPART>15702460</BITRONPART>
+	<RESISTOR_OHM_H>600</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>460</RESISTOR_OHM_L>
+  </LEDRES>
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </LEDRESS>
+   
+    <Current_LimitS>
+  <Current_Limit>
+        <BIN>L-2C-X2</BIN>
+        <T_H>157.5</T_H>
+        <T_L>142.5</T_L>
+  </Current_Limit>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </Current_LimitS>
+
+  <TESTResStepS>
+  <TESTResStep>
+     <STEPNo>1</STEPNo>
+     <RunLabel>RES1</RunLabel>
+     <Modulux>0.005</Modulux>
+  </TESTResStep>
+  
+  </TESTResStepS>
+  
+  
+  <TESTCurStepS>
+  <TESTCurStep>
+      <STEPNo>1</STEPNo>
+      <Description>Cur</Description>
+      <RunLabel>CUR</RunLabel>
+      <Combination>LED1</Combination>
+  </TESTCurStep>
+  
+    
+  </TESTCurStepS>
+  
+  
+  
+  
+</MMAL>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

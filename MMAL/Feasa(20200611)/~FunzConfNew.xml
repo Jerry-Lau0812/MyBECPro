@@ -1,0 +1,576 @@
+<FUNZCONF>
+  <GENERAL>
+    <NUM_PIC>1</NUM_PIC>
+    <STAMPANTE_ON>0</STAMPANTE_ON>
+    <BARCODE_ON>1</BARCODE_ON>
+    <FIGURE>2</FIGURE>
+    <NAMESYSTEM>MPPC GEMIS EVO REWORK</NAMESYSTEM>
+    <DB_CONNECTION_STRING>Data Source=10.140.13.12\BITRONDB1;Initial Catalog=Monitor;Persist Security Info=True;User ID=ECLIPSE;Password=Mes$#2010</DB_CONNECTION_STRING>
+    <DEBUG>0</DEBUG><SERIALGOLDEN>11818403010120439460</SERIALGOLDEN><FASE>6203013</FASE>
+<ID_RACK>0</ID_RACK>
+    <IP_MATRIX1>20.20.20.151</IP_MATRIX1><IP_MATRIX2>20.20.20.150</IP_MATRIX2><IP_COUNTER>20.20.20.182</IP_COUNTER>
+    <LAN>0</LAN>
+  </GENERAL>
+  <COM>
+    <ID_COM>1</ID_COM>
+    <DESCRIZIONE>PIC</DESCRIZIONE>
+    <NUM_COM>5</NUM_COM>
+    <VELOCITA>115200</VELOCITA>
+    <PARITA>0</PARITA>
+    <NUM_BIT>8</NUM_BIT>
+    <STOP_BIT>1</STOP_BIT>
+  </COM>
+  <COM>
+    <ID_COM>2</ID_COM>
+    <DESCRIZIONE>PROG1</DESCRIZIONE>
+    <NUM_COM>6</NUM_COM>
+    <VELOCITA>115200</VELOCITA>
+    <PARITA>0</PARITA>
+    <NUM_BIT>8</NUM_BIT>
+    <STOP_BIT>1</STOP_BIT>
+  </COM>
+  <COM>
+    <ID_COM>4</ID_COM>
+    <DESCRIZIONE>MATRIX1</DESCRIZIONE>
+    <NUM_COM>7</NUM_COM>
+    <VELOCITA>115200</VELOCITA>
+    <PARITA>0</PARITA>
+    <NUM_BIT>8</NUM_BIT>
+    <STOP_BIT>1</STOP_BIT>
+  </COM>
+  
+  
+  <COM>
+    <ID_COM>0</ID_COM>
+    <DESCRIZIONE>FEASA</DESCRIZIONE>
+    <NUM_COM>1</NUM_COM>
+    <VELOCITA>57600</VELOCITA>
+    <PARITA>0</PARITA>
+    <NUM_BIT>8</NUM_BIT>
+    <STOP_BIT>1</STOP_BIT>
+  </COM>
+  <COM>
+    <ID_COM>5</ID_COM>
+    <DESCRIZIONE>MATRIX2</DESCRIZIONE>
+    <NUM_COM>8</NUM_COM>
+    <VELOCITA>115200</VELOCITA>
+    <PARITA>0</PARITA>
+    <NUM_BIT>8</NUM_BIT>
+    <STOP_BIT>1</STOP_BIT>
+  </COM>
+  <COM>
+    <ID_COM>3</ID_COM>
+    <DESCRIZIONE>PROG2</DESCRIZIONE>
+    <NUM_COM>3</NUM_COM>
+    <VELOCITA>115200</VELOCITA>
+    <PARITA>0</PARITA>
+    <NUM_BIT>8</NUM_BIT>
+    <STOP_BIT>1</STOP_BIT>
+  </COM>
+    <LED>
+         <CODE>15701086</CODE>
+         <COLOR>WHITE</COLOR>
+         <RANGE_BRIGHTNESS>5</RANGE_BRIGHTNESS>
+    <BIN_RANGE>
+      <BIN_NAME>2AC</BIN_NAME>
+      <HUE_SL>113</HUE_SL>
+      <HUE_SH>135</HUE_SH>
+      <SAT_SL>20</SAT_SL>
+      <SAT_SH>70</SAT_SH>
+       <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.2951</CX>
+            <CY>0.3091</CY>
+            <NOTE>2A+Offset</NOTE>
+     </CXCY_RANGE_AREA>
+     <INTENSITY_SL>30000</INTENSITY_SL>
+     <INTENSITY_SH>80000</INTENSITY_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+    <BIN_RANGE>
+      <BIN_NAME>2AC</BIN_NAME>
+      <HUE_SL>113</HUE_SL>
+      <HUE_SH>135</HUE_SH>
+      <SAT_SL>20</SAT_SL>
+      <SAT_SH>70</SAT_SH>
+      <CXCY_RANGE_AREA>
+        <POINT>1</POINT>
+        <CX>0.2951</CX>
+        <CY>0.3091</CY>
+        <NOTE>2A+Offset</NOTE>
+      </CXCY_RANGE_AREA>
+      <INTENSITY_SL>30000</INTENSITY_SL>
+      <INTENSITY_SH>80000</INTENSITY_SH>
+      <NOTE>0</NOTE>
+    </BIN_RANGE>
+    </LED>
+    <LED>
+      <CODE>15701087</CODE>
+      <COLOR>WHITE</COLOR>
+      <RANGE_BRIGHTNESS>5</RANGE_BRIGHTNESS><BIN_RANGE>
+        <BIN_NAME>2AC</BIN_NAME>
+        <HUE_SL>113</HUE_SL>
+        <HUE_SH>135</HUE_SH>
+        <SAT_SL>20</SAT_SL>
+        <SAT_SH>70</SAT_SH>
+        <CXCY_RANGE_AREA>
+          <POINT>1</POINT>
+          <CX>0.2951</CX>
+          <CY>0.3091</CY>
+          <NOTE>2A+Offset</NOTE>
+        </CXCY_RANGE_AREA>
+        <INTENSITY_SL>30000</INTENSITY_SL>
+        <INTENSITY_SH>80000</INTENSITY_SH>
+        <NOTE>0</NOTE>
+      </BIN_RANGE>
+      <BIN_RANGE>
+        <BIN_NAME>2AC</BIN_NAME>
+        <HUE_SL>113</HUE_SL>
+        <HUE_SH>135</HUE_SH>
+        <SAT_SL>20</SAT_SL>
+        <SAT_SH>70</SAT_SH>
+        <CXCY_RANGE_AREA>
+          <POINT>1</POINT>
+          <CX>0.2951</CX>
+          <CY>0.3091</CY>
+          <NOTE>2A+Offset</NOTE>
+        </CXCY_RANGE_AREA>
+        <INTENSITY_SL>30000</INTENSITY_SL>
+        <INTENSITY_SH>80000</INTENSITY_SH>
+        <NOTE>0</NOTE>
+      </BIN_RANGE>
+    </LED>
+  <VERSIONI>
+    <ID>0</ID>
+    <MATRIXLEAD/>
+    
+    <DESCRIZIONE>OLSA 500X DRL LED</DESCRIZIONE>
+    <CODE_BITRON>30281687</CODE_BITRON>
+    <CODICE_CLIENTE>1234567890</CODICE_CLIENTE>
+    <CODICE_ECLIPSE>635</CODICE_ECLIPSE>
+    <BARCODE>89898</BARCODE>
+    
+    
+    <SWREL>S010</SWREL>
+    <HWREL>03</HWREL>
+    <SEQUENZA>1</SEQUENZA>
+
+    <FEASA1>
+      <ID>1</ID>
+      <CH>2</CH>
+      <LEDNAME>DL1</LEDNAME>
+      <CODE>15701086</CODE>
+      <SITE>1</SITE>
+      
+      
+      <HUE_OFFSET>0</HUE_OFFSET>
+      
+      <SAT_OFFSET>0</SAT_OFFSET>
+      
+       <CXCY_RANGE_AREA_OFFSET>
+            <POINT>1</POINT>
+            <CX>0</CX>
+            <CY>0</CY>
+
+            <NOTE>2A+Offset</NOTE>
+     </CXCY_RANGE_AREA_OFFSET>
+       <CXCY_RANGE_AREA_OFFSET>
+            <POINT>2</POINT>
+            <CX>0</CX>
+            <CY>0</CY>
+
+            <NOTE>2A+Offset</NOTE>
+     </CXCY_RANGE_AREA_OFFSET>
+       <CXCY_RANGE_AREA_OFFSET>
+         <POINT>3</POINT>
+         <CX>0</CX>
+         <CY>0</CY>
+         <NOTE>2A+Offset</NOTE>
+       </CXCY_RANGE_AREA_OFFSET>
+       <CXCY_RANGE_AREA_OFFSET>
+         <POINT>4</POINT>
+         <CX>0</CX>
+         <CY>0</CY>
+         <NOTE>2A+Offset</NOTE>
+       </CXCY_RANGE_AREA_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+      <NOTE>0</NOTE>
+    </FEASA1>
+    <FEASA1>
+      <ID>2</ID><CH>2</CH>
+      <LEDNAME>DL2</LEDNAME>
+      <CODE>15701086</CODE><SITE>1</SITE>
+      
+      
+      
+      
+      
+      
+      
+
+      <HUE_OFFSET>0</HUE_OFFSET><SAT_OFFSET>0</SAT_OFFSET><INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+      
+      <NOTE>0</NOTE>
+    </FEASA1>
+    <FEASA1>
+      <ID>3</ID><CH>1</CH>
+      <LEDNAME>DL3</LEDNAME>
+      <CODE>15701086</CODE><SITE>1</SITE>
+      
+      
+      
+      
+      
+      
+      
+      <HUE_OFFSET>0</HUE_OFFSET><SAT_OFFSET>0</SAT_OFFSET><INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+      
+      <NOTE>0</NOTE>
+    </FEASA1>
+    <FEASA1>
+      <ID>4</ID><CH>1</CH>
+      <LEDNAME>DL4</LEDNAME>
+      <CODE>15701086</CODE><SITE>1</SITE>
+      
+      
+      
+      
+      
+      
+      
+      <HUE_OFFSET>0</HUE_OFFSET><SAT_OFFSET>0</SAT_OFFSET><INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+      
+      <NOTE>0</NOTE>
+    </FEASA1>
+    <FEASA1>
+      <ID>5</ID><CH>4</CH>
+      <LEDNAME>DL1</LEDNAME>
+      <CODE>15701086</CODE><SITE>2</SITE>
+      
+      
+      
+      
+      
+      
+      
+      <HUE_OFFSET>0</HUE_OFFSET><SAT_OFFSET>0</SAT_OFFSET><INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+      
+      <NOTE>0</NOTE>
+    </FEASA1>
+    <FEASA1>
+      <ID>6</ID><CH>4</CH>
+      <LEDNAME>DL2</LEDNAME>
+      <CODE>15701086</CODE><SITE>2</SITE>
+      
+      
+      
+      
+      
+      
+      
+      <HUE_OFFSET>0</HUE_OFFSET><SAT_OFFSET>0</SAT_OFFSET><INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+      
+      <NOTE>0</NOTE>
+    </FEASA1>
+    <FEASA1>
+      <ID>7</ID><CH>3</CH>
+      <LEDNAME>DL3</LEDNAME>
+      <CODE>15701086</CODE><SITE>2</SITE>
+      
+      
+      
+      
+      
+      
+      
+      <HUE_OFFSET>0</HUE_OFFSET><SAT_OFFSET>0</SAT_OFFSET><INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+      
+      <NOTE>0</NOTE>
+    </FEASA1>
+    <FEASA1>
+      <ID>8</ID><CH>3</CH>
+      <LEDNAME>DL4</LEDNAME>
+      <CODE>15701086</CODE><SITE>2</SITE>
+      
+      
+      
+      
+      
+      
+      
+      <HUE_OFFSET>0</HUE_OFFSET><SAT_OFFSET>0</SAT_OFFSET><INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+      
+      <NOTE>0</NOTE>
+    </FEASA1>
+    <FEASA1>
+      <ID>9</ID><CH>6</CH>
+      <LEDNAME>DL1</LEDNAME>
+      <CODE>15701086</CODE><SITE>3</SITE>
+      
+      
+      
+      
+      
+      
+      
+      <HUE_OFFSET>0</HUE_OFFSET><SAT_OFFSET>0</SAT_OFFSET><INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+      
+      <NOTE>0</NOTE>
+    </FEASA1>
+    <FEASA1>
+      <ID>10</ID><CH>6</CH>
+      <LEDNAME>DL2</LEDNAME>
+      <CODE>15701086</CODE><SITE>3</SITE>
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      <HUE_OFFSET>0</HUE_OFFSET><SAT_OFFSET>0</SAT_OFFSET><INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+      
+      <NOTE>0</NOTE>
+    </FEASA1>
+    <FEASA1>
+      <ID>11</ID><CH>5</CH>
+      <LEDNAME>DL3</LEDNAME>
+      <CODE>15701086</CODE><SITE>3</SITE>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <HUE_OFFSET>0</HUE_OFFSET><SAT_OFFSET>0</SAT_OFFSET><INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+      
+      <NOTE>0</NOTE>
+    </FEASA1>
+    <FEASA1>
+      <ID>12</ID><CH>5</CH>
+      <LEDNAME>DL4</LEDNAME>
+      <CODE>15701086</CODE><SITE>3</SITE>
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      <HUE_OFFSET>0</HUE_OFFSET><SAT_OFFSET>0</SAT_OFFSET><INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+      
+      <NOTE>0</NOTE>
+    </FEASA1>
+    <FEASA1>
+      <ID>13</ID><CH>8</CH>
+      <LEDNAME>DL1</LEDNAME>
+      <CODE>15701086</CODE><SITE>4</SITE>
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      <HUE_OFFSET>0</HUE_OFFSET><SAT_OFFSET>0</SAT_OFFSET><INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+      
+      <NOTE>0</NOTE>
+    </FEASA1>
+    <FEASA1>
+      <ID>14</ID><CH>8</CH>
+      <LEDNAME>DL2</LEDNAME>
+      <CODE>15701086</CODE><SITE>4</SITE>
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      <HUE_OFFSET>0</HUE_OFFSET><SAT_OFFSET>0</SAT_OFFSET><INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+      
+      <NOTE>0</NOTE>
+    </FEASA1>
+    <FEASA1>
+      <ID>15</ID><CH>7</CH>
+      <LEDNAME>DL3</LEDNAME>
+      <CODE>15701086</CODE><SITE>4</SITE>
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      <HUE_OFFSET>0</HUE_OFFSET><SAT_OFFSET>0</SAT_OFFSET><INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+      
+      <NOTE>0</NOTE>
+    </FEASA1>
+    <FEASA1>
+      <ID>16</ID><CH>7</CH>
+      <LEDNAME>DL4</LEDNAME>
+      <CODE>15701086</CODE><SITE>4</SITE>
+      
+      
+      
+      
+      
+      
+   
+      
+      
+      
+      <HUE_OFFSET>0</HUE_OFFSET><SAT_OFFSET>0</SAT_OFFSET><INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+      
+      <NOTE>0</NOTE>
+    </FEASA1>
+    <FEASA1>
+      <CH/>
+      <LEDNAME/>
+      <SITE/>
+      
+      
+      
+      
+      
+      
+      <INTENSITY_OFFSET/>
+      
+      <NOTE/>
+    </FEASA1>
+    <FEASA1>
+      <CH/>
+      <LEDNAME/>
+      <SITE/>
+      
+      
+      
+      
+      
+      
+      <INTENSITY_OFFSET/>
+      
+      <NOTE/>
+    </FEASA1>
+    <FEASA1>
+      <CH/>
+      <LEDNAME/>
+      <SITE/>
+      
+      
+      
+      
+      
+      
+      <INTENSITY_OFFSET/>
+      
+      <NOTE/>
+    </FEASA1>
+    <FEASA1>
+      <CH/>
+      <LEDNAME/>
+      <SITE/>
+      
+      
+      
+      
+      
+      
+      <INTENSITY_OFFSET/>
+      
+      <NOTE/>
+    </FEASA1>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <FEASA2>
+      <CH>01</CH>
+      <LEDNAME>LED1</LEDNAME>
+      <COLOR>RED</COLOR>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>0</HUE_SH>
+      <SAT_SL>0</SAT_SL>
+      <SAT_SH>0</SAT_SH>
+      <INTENSITY_SL>0</INTENSITY_SL><INTENSITY_SH>0</INTENSITY_SH><NOTE>0</NOTE>
+    </FEASA2>
+    <FEASA2>
+      <CH>01</CH>
+      <LEDNAME>LED1</LEDNAME>
+      <COLOR>RED</COLOR>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>0</HUE_SH>
+      <SAT_SL>0</SAT_SL>
+      <SAT_SH>0</SAT_SH>
+      <INTENSITY_SL>0</INTENSITY_SL>
+      <INTENSITY_SH>0</INTENSITY_SH>
+      <NOTE>0</NOTE>
+    </FEASA2>
+    </VERSIONI>
+  
+  
+  
+  
+</FUNZCONF>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

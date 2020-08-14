@@ -1,0 +1,248 @@
+﻿Imports System.Runtime.InteropServices
+Imports Bitron3DEQ.FVTRackBoardManager
+Imports Bitron3DEQ.FVTRackBoardManager.RackSystem
+Imports System.Text
+
+Public Class ClassInterface
+    Implements IDisposable
+    Private ComType As ComTypes = ComTypes.SelfDefine
+
+#Region "DLL Declare here"
+
+#End Region
+
+#Region "Customer Variant Define here"
+
+#End Region
+
+#Region "System Define(No need modify)"
+    Public Enum Errors
+        OK
+        E_NO_COMM 'No COM available
+        E_COMCloseFail
+        E_COMOpenFail
+        E_RAM_RD  'Read error 
+    End Enum
+    Private ComIndex As Integer
+    Private Err As Integer
+    Private PortNum As Integer
+    Private PortBaud As Long
+
+#Region "自定义Com"
+    Private Enum ComTypes
+        DefaultDefine
+        SelfDefine
+    End Enum
+    Private Rs232 As Driver.Serial
+    Public StartCHR As String = "#"
+    Public EndCHR As String = "*"
+    Public EndCHR1 As String = "*"
+    Public FailCHR As String = ""
+    Public ANSI As Encoding = Encoding.GetEncoding(1252) '拉丁字符集
+    Public DatoValido As New List(Of String)
+#End Region
+
+#End Region
+
+#Region "Initial"
+    Public Sub New(ByVal ComIndex As Integer)
+        Me.ComIndex = ComIndex
+
+        If ComType = ComTypes.SelfDefine Then Rs232 = New Driver.Serial
+    End Sub
+
+#End Region
+
+#Region "Com function"
+    Public Function VerCom(ByVal e As Driver.PortEventArgs) As Boolean
+        '*****************************************
+        'Put the Interface communication verify code here
+        '*****************************************
+        PortNum = CInt(e.Com.Port)
+        PortBaud = CLng(e.Com.Baud)
+
+
+        '设置串口
+        If ComType = ComTypes.SelfDefine Then
+            Call SetCom_SelfDefine(e)
+        Else
+
+        End If
+
+        If Me.OpenCom Then
+            Return True
+        Else
+            Return False
+        End If
+    End Function
+    Public Function TrigCom(ByVal e As Driver.PortEventArgs) As Boolean
+        '*****************************************
+        'Put the Interface communication verify code here
+        '*****************************************
+
+        If ComType = ComTypes.SelfDefine Then
+
+        Else
+
+        End If
+
+        If Me.OpenCom Then
+            Return True
+        Else
+            Return False
+        End If
+    End Function
+    Public Function OpenCom() As Boolean
+        '*****************************************
+        'Put Open Interface Com codes here
+        '*****************************************
+        Me.CloseCom()
+
+        If ComType = ComTypes.SelfDefine Then
+            If Rs232.IsOpen = False Then Rs232.Open()
+            Err = Errors.OK
+        Else
+            'todo: add code to open com here
+
+        End If
+
+        If Err = Errors.OK Then
+            Return True
+        Else
+            Return False
+        End If
+    End Function
+    Public Function CloseCom() As Boolean
+        '*****************************************
+        'Put Close Interface Com codes here
+        '*****************************************
+        If ComType = ComTypes.SelfDefine Then
+            If Rs232.IsOpen Then Call CloseCom_SelfDefine()
+            Err = Errors.OK
+        Else
+            'todo: add code to close com here
+
+        End If
+
+        If Err = Errors.OK Then
+            Return True
+        Else
+            Return False
+        End If
+    End Function
+
+#Region "Selfdefine Com"
+    Private Sub SetCom_SelfDefine(ByVal e As Driver.PortEventArgs)
+        Try
+            With Rs232
+                .Index = Me.ComIndex
+                .PortNum = e.Com.Port                         'Port number
+                .PortName = "COM" & e.Com.Port                'PortName
+                .BaudRate = e.Com.Baud                        'Baundrate
+
+                .Parity = 0 'e.Com.Parity      'Parity.None =0
+                .DataBits = e.Com.Data                           'DataBits
+                .StopBits = 1 ' e.Com.Stopbit  'StopBits.One 1
+                .TypeID = ExtHardwareType.INTERF
+                .HWLocation = HardWareLocation.Exteranl
+
+                .Address = e.Index                           'Board address
+                .Name = ExtHardwareType.INTERF.ToString & e.Index + 1 'Name we give
+
+                .Encoding = Encoding.GetEncoding(1252)     'per Sendre caratteri Asci>128
+                .ReadTimeout = 10000
+                .ReceivedBytesThreshold = 1
+
+                '.RtsEnable = True  '非常关键！必须设为可用，否则接收不到数据！
+
+                AddHandler .DataReceived, AddressOf Com_DataReceived
+
+
+                Rs232.Open()
+            End With
+        Catch ex As Exception
+            'Throw New Exception(ex.Message)
+        End Try
+    End Sub
+    Private Sub CloseCom_SelfDefine()
+        Try
+            If Not Rs232 Is Nothing Then
+                If Rs232.IsOpen Then
+                    Rs232.Close()
+                End If
+            End If
+        Catch ex As Exception
+        End Try
+    End Sub
+    Private Sub Com_DataReceived(ByVal sender As Object, ByVal e As System.IO.Ports.SerialDataReceivedEventArgs)
+    End Sub
+    Public Function Riceve_Standard() As String
+        Dim ReadOK As Boolean = False
+        Dim StrRead As String = ""
+        Dim TmpRead As String = ""
+        Dim RecCmds(0) As Byte
+
+        Try
+            While Not ReadOK
+                RecCmds(0) = Rs232.ReadByte
+                StrRead &= ANSI.GetString(RecCmds)
+                If StrRead.Contains(StartCHR) Then ReadOK = True
+            End While
+
+            If ReadOK Then
+                ReadOK = False       'Reset Flag
+                While Not ReadOK
+                    RecCmds(0) = Rs232.ReadByte
+                    StrRead &= ANSI.GetString(RecCmds)
+                    If StrRead.Contains(EndCHR) Then
+                        While Not ReadOK
+                            RecCmds(0) = Rs232.ReadByte
+                            TmpRead &= ANSI.GetString(RecCmds)
+                            If TmpRead.Contains(EndCHR1) Then
+                                ReadOK = True
+                                StrRead &= TmpRead
+                            End If
+                        End While
+                    End If
+                End While
+            End If
+        Catch ex As Exception
+        End Try
+
+        Return StrRead
+    End Function
+#End Region
+#End Region
+
+#Region "Test function"
+
+#End Region
+
+#Region "Dispose"
+    Protected Overrides Sub finalize()
+        Me.CloseCom()
+    End Sub
+
+
+    ' IDisposable
+    Private disposedValue As Boolean = False        ' To detect redundant calls
+    Protected Overridable Sub Dispose(ByVal disposing As Boolean)
+        If Not Me.disposedValue Then
+            If disposing Then
+                ' TODO: free other state (managed objects).
+            End If
+            Me.CloseCom()
+        End If
+        Me.disposedValue = True
+    End Sub
+
+#Region " IDisposable Support "
+    ' This code added by Visual Basic to correctly implement the disposable pattern.
+    Public Sub Dispose() Implements IDisposable.Dispose
+        ' Do not change this code.  Put cleanup code in Dispose(ByVal disposing As Boolean) above.
+        Dispose(True)
+        GC.SuppressFinalize(Me)
+    End Sub
+#End Region
+#End Region
+End Class

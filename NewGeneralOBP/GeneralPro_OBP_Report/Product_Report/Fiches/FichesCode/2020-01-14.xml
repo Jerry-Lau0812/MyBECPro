@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FICHESCODES>
+  <PRODUCT bitroncode="30410001">
+    <PAKAGE code="22">
+      <BARCODE code="141220LH3919" layoutcode="111">2018-10-22 18:39:29</BARCODE>
+      <BARCODE code="141220LH2392" layoutcode="111">2018-10-22 18:39:29</BARCODE>
+      <BARCODE code="141220LH3911" layoutcode="111">2018-10-22 18:39:35</BARCODE>
+      <BARCODE code="11111111111" layoutcode="111">2020-01-14 14:23:56</BARCODE>
+      <BARCODE code="22222222" layoutcode="111">2020-01-14 14:24:03</BARCODE>
+      <BARCODE code="3333333333" layoutcode="111">2020-01-14 14:24:07</BARCODE>
+    </PAKAGE>
+  </PRODUCT>
+</FICHESCODES>

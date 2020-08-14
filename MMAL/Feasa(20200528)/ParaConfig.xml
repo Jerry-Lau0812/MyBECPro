@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="gb2312"?>
+<MMAL>
+<ENABLEFUJITRAX>1</ENABLEFUJITRAX>
+<ENABLERES>0</ENABLERES>
+<ENABLECUR>1</ENABLECUR>
+
+ <LEDRESS>
+  <LEDRES>
+	
+	<BIN>EA-3B</BIN>
+	<BITRONPART>15701280</BITRONPART>
+	<RESISTOR_OHM_H>30</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>JZ-J3</BIN>
+	<BITRONPART>15701303</BITRONPART>
+	<RESISTOR_OHM_H>30</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>Q3-JZ</BIN>
+	<BITRONPART>15701280</BITRONPART>
+	<RESISTOR_OHM_H>30</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>T3-JZ</BIN>
+	<BITRONPART>15701280</BITRONPART>
+	<RESISTOR_OHM_H>30</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+
+  <LEDRES>
+	
+	<BIN>J3-KX</BIN>
+	<BITRONPART>15701282</BITRONPART>
+	<RESISTOR_OHM_H>39</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>M3-KX</BIN>
+	<BITRONPART>15701282</BITRONPART>
+	<RESISTOR_OHM_H>39</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>Q3-KX</BIN>
+	<BITRONPART>15701282</BITRONPART>
+	<RESISTOR_OHM_H>39</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>T3-KX</BIN>
+	<BITRONPART>15701282</BITRONPART>
+	<RESISTOR_OHM_H>39</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>J3-KY</BIN>
+	<BITRONPART>15701284</BITRONPART>
+	<RESISTOR_OHM_H>47</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>M3-KY</BIN>
+	<BITRONPART>15701284</BITRONPART>
+	<RESISTOR_OHM_H>47</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>Q3-KY</BIN>
+	<BITRONPART>15701284</BITRONPART>
+	<RESISTOR_OHM_H>47</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+    
+    <BIN>T3-KY</BIN>
+    <BITRONPART>15701283</BITRONPART>
+    <RESISTOR_OHM_H>43</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+    
+    <BIN>3A-EA</BIN>
+    <BITRONPART>15701286</BITRONPART>
+    <RESISTOR_OHM_H>62</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+    
+    <BIN>3B-EA</BIN>
+    <BITRONPART>15701286</BITRONPART>
+    <RESISTOR_OHM_H>62</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+    
+    <BIN>4A-EA</BIN>
+    <BITRONPART>15701285</BITRONPART>
+    <RESISTOR_OHM_H>56</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+    
+    <BIN>4B-EA</BIN>
+    <BITRONPART>15701285</BITRONPART>
+    <RESISTOR_OHM_H>56</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+    
+    <BIN>3A-EB</BIN>
+    <BITRONPART>15701290</BITRONPART>
+    <RESISTOR_OHM_H>91</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+    
+    <BIN>3B-EB</BIN>
+    <BITRONPART>15701290</BITRONPART>
+    <RESISTOR_OHM_H>91</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+    
+    <BIN>4A-EB</BIN>
+    <BITRONPART>15701289</BITRONPART>
+    <RESISTOR_OHM_H>82</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+    
+    <BIN>4B-EB</BIN>
+    <BITRONPART>15701289</BITRONPART>
+    <RESISTOR_OHM_H>82</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+    
+    <BIN>3A-FA</BIN>
+    <BITRONPART>15701292</BITRONPART>
+    <RESISTOR_OHM_H>110</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+    
+    <BIN>3B-FA</BIN>
+    <BITRONPART>15701292</BITRONPART>
+    <RESISTOR_OHM_H>110</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+    
+    <BIN>4A-FA</BIN>
+    <BITRONPART>15701292</BITRONPART>
+    <RESISTOR_OHM_H>110</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>4B-FA</BIN>
+	<BITRONPART>15701291</BITRONPART>
+	<RESISTOR_OHM_H>100</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDRES>
+  </LEDRESS>
+   
+    <Current_LimitS>
+  <Current_Limit>
+        <BIN>CA_9V</BIN>
+        <T_H>60</T_H>
+        <T_L>8.1</T_L>
+  </Current_Limit>
+  <Current_Limit>
+        <BIN>CB_9V</BIN>
+        <T_H>56</T_H>
+        <T_L>8.82</T_L>
+  </Current_Limit>
+  <Current_Limit>
+        <BIN>DA_9V</BIN>
+        <T_H>53</T_H>
+        <T_L>8.82</T_L>
+  </Current_Limit>
+  
+    <Current_Limit>
+        <BIN>CA_13V5</BIN>
+        <T_H>123.4</T_H>
+        <T_L>72</T_L>
+  </Current_Limit>
+  <Current_Limit>
+        <BIN>CB_13V5</BIN>
+        <T_H>112.4</T_H>
+        <T_L>64.8</T_L>
+  </Current_Limit>
+  <Current_Limit>
+        <BIN>DA_13V5</BIN>
+        <T_H>101.4</T_H>
+        <T_L>56.7</T_L>
+  </Current_Limit>
+  
+  <Current_Limit>
+        <BIN>CA_16V</BIN>
+        <T_H>163.2</T_H>
+        <T_L>88.2</T_L>
+  </Current_Limit>
+  <Current_Limit>
+        <BIN>CB_16V</BIN>
+        <T_H>167.6</T_H>
+        <T_L>82.8</T_L>
+  </Current_Limit>
+  <Current_Limit>
+        <BIN>DA_16V</BIN>
+        <T_H>154.4</T_H>
+        <T_L>72.9</T_L>
+  </Current_Limit>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </Current_LimitS>
+
+  <TESTResStepS>
+  <TESTResStep>
+     <STEPNo>1</STEPNo>
+     <RunLabel>LED101</RunLabel>
+     <Modulux>0.005</Modulux>
+     <Formula>21.5+X</Formula>
+     <BIN>EA-3B</BIN>
+  </TESTResStep>
+  <TESTResStep>
+     <STEPNo>2</STEPNo>
+     <RunLabel>LED101</RunLabel>
+     <Modulux>0.005</Modulux>
+     <Formula>(21.5*X)/(21.5+X)</Formula>
+     <BIN>EA-3B</BIN></TESTResStep>
+  </TESTResStepS>
+  
+  
+  <TESTCurStepS>
+  <TESTCurStep>
+      <STEPNo>1</STEPNo>
+      <Description>Curr_Turn</Description>
+      <RunLabel>CUR_9V</RunLabel>
+      <Combination>LED101</Combination>
+      <BIN>CA_9V</BIN>
+  </TESTCurStep>
+  
+    <TESTCurStep>
+      <STEPNo>2</STEPNo>
+      <Description>Curr_Turn</Description>
+      <RunLabel>CUR_13V5</RunLabel>
+      <Combination>LED101</Combination>
+      <BIN>CA_13V5</BIN>
+  </TESTCurStep>
+  <TESTCurStep>
+      <STEPNo>3</STEPNo>
+      <Description>Curr_Turn</Description>
+      <RunLabel>CUR_16V</RunLabel>
+      <Combination>LED101</Combination>
+      <BIN>CA_16V</BIN>
+  </TESTCurStep>
+  
+  </TESTCurStepS>
+  
+  
+  
+  
+</MMAL>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

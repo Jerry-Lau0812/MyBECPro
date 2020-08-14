@@ -1,0 +1,37 @@
+Public Function StartCheckLEDs(ByVal SiteNo As Integer, ByVal Code_Bitron As String, ByVal PCBMatrix As String) As Boolean
+        For Each Ver In Myconf.VERSIONIS
+            If Ver.CodeBitron = Code_Bitron Then 'Select Product(Correspond code bitron)
+                For Each stp In Ver.Sites        'Select Site Steps
+                    If stp.SiteNo = SiteNo Then
+                        For Each j In stp.SITE
+                            Dim CurrentIndex As Integer = GetCurrentFeasaIndex(j.Name)
+                            Dim Ch As Integer = j.CH - 1
+                            Dim TempRegisterVF As Double = 0
+                            RunAnlTaskLabel("", j.LEDName, j.LEDName)
+                            HoldRegisterRead(j.VFRegister, TempRegisterVF, "")
+                            If Myconf.GENERAL.GetBinCodeFromFujiTrax = "0" Then
+                                ValidateVF(j.LEDName, SiteNo, j.BinName, j.Code, TempRegisterVF, j.VFOffset)
+                                ValidateHSI(j.LEDName, SiteNo, j.BinName, j.Code, FeasaCollectList(CurrentIndex).H(Ch), FeasaCollectList(CurrentIndex).S(Ch), FeasaCollectList(CurrentIndex).I(Ch), j.HueOffset, j.SatOffset, j.IntensityOffset)
+                                ValidateAbsIntensity(j.LEDName, SiteNo, j.BinName, j.Code, FeasaCollectList(CurrentIndex).AbsI(Ch), j.IntensityOffset)
+                                ValidateWavelength(j.LEDName, SiteNo, j.BinName, j.Code, FeasaCollectList(CurrentIndex).Wave(Ch), j.DominantWavOffset)
+                                'ValidateCXCY(j.LEDName, SiteNo, j.BinName, j.Code, FeasaCollectList(CurrentIndex).Cx(Ch), FeasaCollectList(CurrentIndex).Cy(Ch), j.CxOffset, j.CyOffset)
+                            Else
+                                Try
+                                    j.BinName = GetTraxResultAccording(PCBMatrix, j.LEDName).BinCode
+                                    j.Code = GetTraxResultAccording(PCBMatrix, j.LEDName).PartNo
+                                Catch
+                                    FailFlag = FAIL 'Test Fail
+                                    MsgPrintLog("Numsite" & NumSite.ToString & " GetFujiTrx Failed! Please check FunzConfiguration or FujiTrax!", 0)
+                                End Try
+                                ValidateVF(j.LEDName, SiteNo, j.BinName, j.Code, TempRegisterVF, j.VFOffset)
+                                ValidateHSI(j.LEDName, SiteNo, j.BinName, j.Code, FeasaCollectList(CurrentIndex).H(Ch), FeasaCollectList(CurrentIndex).S(Ch), FeasaCollectList(CurrentIndex).I(Ch), j.HueOffset, j.SatOffset, j.IntensityOffset)
+                                ValidateAbsIntensity(j.LEDName, SiteNo, j.BinName, j.Code, FeasaCollectList(CurrentIndex).AbsI(Ch), j.IntensityOffset)
+                                ValidateWavelength(j.LEDName, SiteNo, j.BinName, j.Code, FeasaCollectList(CurrentIndex).Wave(Ch), j.DominantWavOffset)
+                                'ValidateCXCY(j.LEDName, SiteNo, j.BinName, j.Code, FeasaCollectList(CurrentIndex).Cx(Ch), FeasaCollectList(CurrentIndex).Cy(Ch), j.CxOffset, j.CyOffset)
+                            End If
+                        Next
+                    End If
+                Next
+            End If
+        Next
+    End Function

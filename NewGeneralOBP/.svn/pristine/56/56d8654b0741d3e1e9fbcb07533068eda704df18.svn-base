@@ -1,0 +1,579 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Model_FVT
+</name>
+</assembly>
+<members>
+<member name="M:Model_FVT.Frmpannello.ReloadAndDispInfos">
+	<summary>
+ 重新加载设置-当用户选择其他产品，切换操作模式时发生
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.DispSplitMain">
+	<summary>
+ 显示主面板及设置相关的按钮状态
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.DispTestMode">
+	<summary>
+ 生产模式及调试模式间切换时的处理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.SetDebugToolState">
+	<summary>
+ 设置Debug工具条各按钮状态
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.SetOtherProdControl">
+	<summary>
+ 设置其他按钮状态
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.AutoSetUUT">
+	<summary>
+ 自动设置UUT
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.LoadOperators">
+	<summary>
+ 加载所有操作者姓名
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.DispApplicationInfo">
+	<summary>
+ 设置当前工程名称等信息
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.DispProdVersionInfo">
+	<summary>
+ 显示当前产品版本信息
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.DispLabelColor">
+	<summary>
+ 显示标签颜色
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.DispPassfail">
+	<summary>
+ 显示Pass及Fail数量并绘制饼图
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.DispOperatorName">
+	<summary>
+ 显示操作者姓名
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.DispCurrentTestMode">
+	<summary>
+ 显示当前操作模式
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.DispManaulScanPanel">
+	<summary>
+ 显示手动扫描窗体
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.DispScanFiches">
+	<summary>
+ 显示Fiches扫描框
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.IncProgBar">
+	<summary>
+ 进度增加1
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.DispResetMachinePanel">
+	<summary>
+ 显示初始化Fixture马达窗体
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.CancelSelectAllRow">
+	<summary>
+ 取消对所有行的选择，用于每次测试开始时的初始状态设置
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.MenuLoadProgram_Click(System.Object,System.EventArgs)">
+	<summary>
+ 重新加载
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.ToolStripBut_Up_Click(System.Object,System.EventArgs)">
+	<summary>
+ 远程调试按钮
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.ToolStripButShowSignal_Click(System.Object,System.EventArgs)">
+	<summary>
+ 显示信号及相机马达调整面板
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.ButSelProd_Click(System.Object,System.EventArgs)">
+	<summary>
+ 产品选择
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.PicDial_Resize(System.Object,System.EventArgs)">
+	<summary>
+ 重绘饼图
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.butReset_Click(System.Object,System.EventArgs)">
+	<summary>
+ 数量清零
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.radioButProduct_Click(System.Object,System.EventArgs)">
+	<summary>
+ 测试模式改变
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.CombOperator_SelectedValueChanged(System.Object,System.EventArgs)">
+	<summary>
+ 操作者姓名改变
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.ToolStripButQuit_Click(System.Object,System.EventArgs)">
+	<summary>
+ 退出系统
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.ButReadBarcode_Click(System.Object,System.EventArgs)">
+	<summary>
+ 启动读条码窗体
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.ButSherlock_Click(System.Object,System.EventArgs)">
+	<summary>
+ 启动Sherlock窗体
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.ButScanFiches_Click(System.Object,System.EventArgs)">
+	<summary>
+ 启动Fiches扫描窗体
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.ButEditBarcodes_Click(System.Object,System.EventArgs)">
+	<summary>
+ 编辑已有条码
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.ButStop_Click(System.Object,System.EventArgs)">
+	<summary>
+ 测试中止
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.ClearTestResult">
+	<summary>
+ 清除上一次的测试结果
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.InitialForm">
+	<summary>
+ 每次测试开始时，重置各UUT状态
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.FinishTest">
+	<summary>
+ 每次测试结束后，设置各状态
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.SetDispMsg(System.String,System.Boolean)">
+	<summary>
+ 设置显示于图片上方的文字提示信息
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.Frmpannello.SetDispImage(System.Drawing.Image)">
+	<summary>
+ 设置图片内容
+ </summary>
+	<param name="img"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.ClassSQL.SaveMesValues">
+	<summary>
+ Save all measured value to table:Data_Assembly
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.ModuleMain.IncPassFail">
+	<summary>
+ 增加Pass或Fail数量
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.ModuleMain.ResetPassFail">
+	<summary>
+ 重置测试数量
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.ModuleMain.UpdatePassFail">
+	<summary>
+ 保存当前Pass及Fail数量
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.ModuleMain.DispMachineState(System.Int32,Bitron3DEQ.FVTTestAssistant.MachineStates)">
+	<summary>
+ 显示当前测试状态
+ </summary>
+	<param name="UUTNo"></param>
+	<param name="State"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.ClassTest.DispFailTube">
+	<summary>
+ 显示Fail Tube扫描
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.FrmDiagMachine.ButMotor_GoZero_Click(System.Object,System.EventArgs)">
+	<summary>
+ Move motor to zero position
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.FrmDiagMachine.ButMotor_SetAsZero_Click(System.Object,System.EventArgs)">
+	<summary>
+ Set current position as zero
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.FrmDiagMachine.ButMotor_GotoPos_Click(System.Object,System.EventArgs)">
+	<summary>
+ Move motor to specified position
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.FrmDiagMachine.ButMotor_Run1Loop_Click(System.Object,System.EventArgs)">
+	<summary>
+ move motor run 1 cycle
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.FrmDiagMachine.ButMotor_ReadCount_Click(System.Object,System.EventArgs)">
+	<summary>
+ Read Switch count
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.FrmDiagMachine.ButMotor_ReadTorque_Click(System.Object,System.EventArgs)">
+	<summary>
+ Get Torque value
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.FrmDiagMachine.ButMotor_ECHOCount_Click(System.Object,System.EventArgs)">
+	<summary>
+ Use RS8 or RS16 board to get anolog step value
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.FrmDiagMachine.ButMotor_Unlock_Click(System.Object,System.EventArgs)">
+	<summary>
+ Unlock Motor
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Model_FVT.FrmDiagMachine.ButMotor_Send_Click(System.Object,System.EventArgs)">
+	<summary>
+ Send command to Motor
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.action_log">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.arrow_down">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.arrow_out">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.arrow_right">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.arrow_up">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_About">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Add">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Break">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Config">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Debug">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Delete">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_First">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Help">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Last">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Load">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Lock">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_MoveBack">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_MoveNext">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Pause">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Product">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Reset">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Run">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Select">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_SelectAll">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Skip">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Statistic">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Stop">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.But_Unload">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.Close">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.Find">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.Flag_China">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.Flag_Italy">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.Flag_Poland">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.Flag_Turky">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.Flag_USA">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.LED_Blue">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.LED_Gray">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.LED_GreeN">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.LED_Red">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.LED_Yellow">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.lightning">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.lightning_delete">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.MSG_Abort">
+	<summary>
+  Looks up a localized string similar to 测试中止！请扫描条码开始下一块的测试.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.MSG_Failed">
+	<summary>
+  Looks up a localized string similar to 测试失败！请扫描条码开始下一块的测试.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.MSG_Pass">
+	<summary>
+  Looks up a localized string similar to 测试通过！请扫描条码开始下一块的测试.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.MSG_PutPCB">
+	<summary>
+  Looks up a localized string similar to 请将PCB放置在载具上.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.MSG_ScanBarcode">
+	<summary>
+  Looks up a localized string similar to  请扫描条形码:.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.Pic_BackGround">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.Pic_Barcode">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.Pic_bitron">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.Pic_TitleBottom">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.Pic_TitleTop">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.SW_Close">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.SW_CloseErr">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.SW_Green">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.SW_Open">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.SW_Red">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.FVTResource.SW_Yellow">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:Model_FVT.My.Resources.FVTResource">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Model_FVT.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Model_FVT.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

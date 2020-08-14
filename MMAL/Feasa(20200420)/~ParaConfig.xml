@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="gb2312"?>
+<MMAL>
+  <LEDBIN>
+	<TestID>0</TestID>
+	<BIN>J3-JZ</BIN>
+	<BITRONPART>15701280</BITRONPART>
+	<RESISTOR_OHM_H>30</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+	<TestID>1</TestID>
+	<BIN>M3-JZ</BIN>
+	<BITRONPART>15701280</BITRONPART>
+	<RESISTOR_OHM_H>30</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+	<TestID>2</TestID>
+	<BIN>Q3-JZ</BIN>
+	<BITRONPART>15701280</BITRONPART>
+	<RESISTOR_OHM_H>30</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+	<TestID>3</TestID>
+	<BIN>T3-JZ</BIN>
+	<BITRONPART>15701280</BITRONPART>
+	<RESISTOR_OHM_H>30</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+
+  <LEDBIN>
+	<TestID>4</TestID>
+	<BIN>J3-KX</BIN>
+	<BITRONPART>15701282</BITRONPART>
+	<RESISTOR_OHM_H>39</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+	<TestID>5</TestID>
+	<BIN>M3-KX</BIN>
+	<BITRONPART>15701282</BITRONPART>
+	<RESISTOR_OHM_H>39</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+	<TestID>6</TestID>
+	<BIN>Q3-KX</BIN>
+	<BITRONPART>15701282</BITRONPART>
+	<RESISTOR_OHM_H>39</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+	<TestID>7</TestID>
+	<BIN>T3-KX</BIN>
+	<BITRONPART>15701282</BITRONPART>
+	<RESISTOR_OHM_H>39</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+	<TestID>8</TestID>
+	<BIN>J3-KY</BIN>
+	<BITRONPART>15701284</BITRONPART>
+	<RESISTOR_OHM_H>47</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+	<TestID>9</TestID>
+	<BIN>M3-KY</BIN>
+	<BITRONPART>15701284</BITRONPART>
+	<RESISTOR_OHM_H>47</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+	<TestID>10</TestID>
+	<BIN>Q3-KY</BIN>
+	<BITRONPART>15701284</BITRONPART>
+	<RESISTOR_OHM_H>47</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+    <TestID>11</TestID>
+    <BIN>T3-KY</BIN>
+    <BITRONPART>15701283</BITRONPART>
+    <RESISTOR_OHM_H>43</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+    <TestID>12</TestID>
+    <BIN>3A-EA</BIN>
+    <BITRONPART>15701286</BITRONPART>
+    <RESISTOR_OHM_H>62</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+    <TestID>13</TestID>
+    <BIN>3B-EA</BIN>
+    <BITRONPART>15701286</BITRONPART>
+    <RESISTOR_OHM_H>62</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+    <TestID>14</TestID>
+    <BIN>4A-EA</BIN>
+    <BITRONPART>15701285</BITRONPART>
+    <RESISTOR_OHM_H>56</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+    <TestID>15</TestID>
+    <BIN>4B-EA</BIN>
+    <BITRONPART>15701285</BITRONPART>
+    <RESISTOR_OHM_H>56</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+    <TestID>16</TestID>
+    <BIN>3A-EB</BIN>
+    <BITRONPART>15701290</BITRONPART>
+    <RESISTOR_OHM_H>91</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+    <TestID>17</TestID>
+    <BIN>3B-EB</BIN>
+    <BITRONPART>15701290</BITRONPART>
+    <RESISTOR_OHM_H>91</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+    <TestID>18</TestID>
+    <BIN>4A-EB</BIN>
+    <BITRONPART>15701289</BITRONPART>
+    <RESISTOR_OHM_H>82</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+    <TestID>19</TestID>
+    <BIN>4B-EB</BIN>
+    <BITRONPART>15701289</BITRONPART>
+    <RESISTOR_OHM_H>82</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+    <TestID>20</TestID>
+    <BIN>3A-FA</BIN>
+    <BITRONPART>15701292</BITRONPART>
+    <RESISTOR_OHM_H>110</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+    <TestID>21</TestID>
+    <BIN>3B-FA</BIN>
+    <BITRONPART>15701292</BITRONPART>
+    <RESISTOR_OHM_H>110</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+    <TestID>22</TestID>
+    <BIN>4A-FA</BIN>
+    <BITRONPART>15701292</BITRONPART>
+    <RESISTOR_OHM_H>110</RESISTOR_OHM_H>
+    <RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+  <LEDBIN>
+	<TestID>20</TestID>
+	<BIN>4B-FA</BIN>
+	<BITRONPART>15701291</BITRONPART>
+	<RESISTOR_OHM_H>100</RESISTOR_OHM_H>
+	<RESISTOR_OHM_L>30</RESISTOR_OHM_L>
+  </LEDBIN>
+   
+  <Current_Limit>
+        <BIN>HX</BIN>
+        <T_H>666</T_H>
+        <T_L>545</T_L>
+  </Current_Limit>
+  <Current_Limit>
+        <BIN>HY</BIN>
+        <T_H>562</T_H>
+        <T_L>460</T_L>
+  </Current_Limit>
+  <Current_Limit>
+        <BIN>HZ</BIN>
+        <T_H>496</T_H>
+        <T_L>492</T_L>
+  </Current_Limit>
+  <Current_Limit>
+         <BIN>EA-JZ</BIN>
+         <T_H>544</T_H>
+         <T_L>445</T_L>
+  </Current_Limit>
+  <Current_Limit>
+         <BIN>EA-KX</BIN>
+         <T_H>450</T_H>
+         <T_L>368</T_L>
+  </Current_Limit>
+  <Current_Limit>
+    <BIN>EA-KY</BIN>
+    <T_H>406</T_H>
+    <T_L>332</T_L>
+  </Current_Limit>
+  <Current_Limit>
+    <BIN>EB-JZ</BIN>
+    <T_H>501</T_H>
+    <T_L>410</T_L>
+  </Current_Limit>
+  <Current_Limit>
+    <BIN>EB-KX</BIN>
+    <T_H>407</T_H>
+    <T_L>333</T_L>
+  </Current_Limit>
+  <Current_Limit>
+    <BIN>EB-KY</BIN>
+    <T_H>363</T_H>
+    <T_L>297</T_L>
+  </Current_Limit>
+  <Current_Limit>
+    <BIN>FA-JZ</BIN>
+    <T_H>480</T_H>
+    <T_L>392</T_L>
+  </Current_Limit>
+  <Current_Limit>
+    <BIN>FA-KX</BIN>
+    <T_H>385</T_H>
+    <T_L>315</T_L>
+  </Current_Limit>
+  <Current_Limit>
+         <BIN>FA-KY</BIN>
+         <T_H>341</T_H>
+         <T_L>279</T_L>
+  </Current_Limit>
+
+  <TESTResSTEP>
+     <STEPNO>1</STEPNO>
+     <RES>R178</RES>
+     <BIN/>
+  </TESTResSTEP>
+  <TESTResSTEP>
+     <STEPNO>2</STEPNO>
+     <RES>R150</RES>
+     <BIN/>
+  </TESTResSTEP>
+  
+  
+  <TESTCurSTEP>
+      <STEPNo>1</STEPNo>
+      <Description>Curr_Turn</Description>
+      <RunLable>CUR_TA_T</RunLable>
+      <Combination>LED17_LED18</Combination>
+  </TESTCurSTEP>
+  
+    <TESTCurSTEP>
+      <STEPNo>2</STEPNo>
+      <Description>Curr_Tail</Description>
+      <RunLable>CUR_TU_T</RunLable>
+      <Combination>LED19</Combination>
+  </TESTCurSTEP>
+  
+  
+  
+  <LEDBIN>
+    <TestID/>
+    <BIN/>
+    <BITRONPART/>
+    <RESISTOR_OHM/>
+  </LEDBIN>
+</MMAL>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

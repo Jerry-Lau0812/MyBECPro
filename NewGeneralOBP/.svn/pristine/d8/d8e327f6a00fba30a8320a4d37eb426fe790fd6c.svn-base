@@ -1,0 +1,314 @@
+﻿Imports System.Data.SqlClient
+Imports System.Text
+
+Public Class ClassSQL
+    Inherits Bitron3DEQ.FVTTestAssistant.ClassBaseSQLDB
+    Private TableCompleteBarcode As String
+    Private TableControlBarcode As String
+    Private TableInputBarcode As String
+
+    Private TableCompleteBarcode_LastYear As String
+    Private TableControlBarcode_LastYear As String
+    Private TableInputBarcode_LastYear As String
+
+    Private Enum Results
+        PASS
+        FAIL
+        NotFound
+    End Enum
+    Private PadRes(1) As Results
+    Private GlueResult(1) As Results
+
+    Public Class MeasureValue
+        Public Barcode As String
+        Public BarcodeID As String
+        Public TestDate As DateTime
+        Public TestResult As Boolean
+        Public FailStep As String
+
+
+        Private _TableName As String
+
+        Public Sub New(ByVal TableName As String)
+            Me._TableName = TableName
+        End Sub
+        Public Sub Initial()
+            Me.Barcode = ""
+            Me.BarcodeID = ""
+            Me.TestDate = Now
+            Me.TestResult = False
+            Me.FailStep = "-"
+
+        End Sub
+        Public Function GetInsertCommand() As String
+            Dim StrCmd As New StringBuilder
+            StrCmd.Append("Insert into " & Me._TableName & " Values(")
+            StrCmd.Append(Me.BarcodeID)
+            StrCmd.Append(",'" & Me.TestDate.ToString("yyyy-MM-dd HH:mm:ss") & "'")
+            StrCmd.Append(",'" & IIf(Me.TestResult, "PASS", "FAIL") & "'")
+            StrCmd.Append(",'" & Me.FailStep & "'")
+
+            StrCmd.Append(")")
+
+            Return StrCmd.ToString
+        End Function
+    End Class
+    Public MesValue As MeasureValue
+
+
+    Public Sub New()
+        MyBase.New("10.150.10.11\reparto", "XXX", "reparto", "Reparto2014")
+
+        Try
+            TableCompleteBarcode = "Data_CompleteBarcode" & DateTime.Now.ToString("yyyy")
+            TableControlBarcode = "Data_ControlBarcode" & DateTime.Now.ToString("yyyy")
+            TableInputBarcode = "Data_InputBarcode" & DateTime.Now.ToString("yyyy")
+
+            Dim Lastyear As Date
+            Lastyear = DateAdd(DateInterval.Year, -1, Date.Now)
+            TableCompleteBarcode_LastYear = "Data_CompleteBarcode" & Lastyear.ToString("yyyy")
+            TableControlBarcode_LastYear = "Data_ControlBarcode" & Lastyear.ToString("yyyy")
+            TableInputBarcode_LastYear = "Data_InputBarcode" & Lastyear.ToString("yyyy")
+
+            '检查表格是否存在,不存在则创建之
+            Me.OpenDB()
+            If IsExistTable(TableCompleteBarcode) = False Then
+                Call CreateTableBarcode()
+            End If
+
+            Me.CloseDB()
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical)
+        End Try
+    End Sub
+
+    Private Sub CreateTableBarcode()
+        Dim StrCopy As String = "Select * into " & Me.TableCompleteBarcode & " from Model_CompleteBarcode where 1=2"
+        MyBase.ExecuteNonQuery(StrCopy)
+    End Sub
+    ''' <summary>
+    ''' Save all measured value to table:Data_Assembly
+    ''' </summary>
+    ''' <remarks></remarks>
+    Public Sub SaveMesValues()
+        If Me.MesValue.BarcodeID <> "" Then
+            Dim StrCmd As String = ""
+            StrCmd = Me.MesValue.GetInsertCommand()
+            Try
+                MyBase.OpenDB()
+                MyBase.ExecuteNonQuery(StrCmd)
+                Call UpdateLastResult()
+            Catch ex As Exception
+                MsgBox(ex.Message, MsgBoxStyle.Critical)
+            Finally
+                MyBase.CloseDB()
+            End Try
+        End If
+    End Sub
+    Private Sub UpdateLastResult()
+        'Dim StrCmd As String = "Update " & Me.TableResult & " set AssemblyResult='" & IIf(Me.MesValue.TestResult, "PASS", "FAIL") & "',FVTDate='" & Me.MesValue.TestDate.ToString("yyyy-MM-dd HH:mm:ss") & "',PCBDatamatrix='" & Me.MesValue.Datamatrix & "' where ID=" & Me.MesValue.BarcodeID
+        'MyBase.ExecuteNonQuery(StrCmd)
+    End Sub
+    '''' <summary>
+    '''' Get IGBT Assembly Result and Input FVT result
+    '''' </summary>
+    '''' <returns></returns>
+    '''' <remarks></remarks>
+    'Public Function GetAssemblyResult(ByVal Barcode1 As String, ByVal Barcode2 As String) As String
+    '    Dim Result As String = "NG"
+    '    Dim DR As SqlDataReader = Nothing
+    '    Dim Found As Boolean = False
+
+    '    Try
+    '        Me.OpenDB()
+
+    '        '----------------------------------------------------------------------
+    '        Dim StrQuery As String = "Select InputFVT from " & Me.TableInputBarcode & _
+    '                                 " Where Barcode='" & Barcode1 & "'"
+    '        DR = MyBase.ExecuteDataReader(StrQuery)
+    '        If DR.HasRows Then
+    '            Found = True
+    '            DR.Read()
+    '            Dim Value As String = DR.Item(0).ToString
+    '            If Value = "P" Then
+    '                Result = "OK"
+    '            Else
+    '                DR.Close()
+    '                ErrorMsgToDisp = My.Resources.FVTResource.Msg_InputTestFailed
+    '                Throw New Exception("NG,Input Board Test Failed!")
+    '            End If
+    '        End If
+    '        If DR.IsClosed = False Then DR.Close()
+
+    '        If Not Found Then
+    '            StrQuery = "Select InputFVT from " & Me.TableInputBarcode_LastYear & _
+    '                                              " Where Barcode='" & Barcode1 & "'"
+    '            DR = MyBase.ExecuteDataReader(StrQuery)
+    '            If DR.HasRows Then
+    '                Found = True
+    '                DR.Read()
+    '                Dim Value As String = DR.Item(0).ToString
+    '                If Value = "P" Then
+    '                    Result = "OK"
+    '                Else
+    '                    DR.Close()
+    '                    ErrorMsgToDisp = My.Resources.FVTResource.Msg_InputTestFailed
+    '                    Throw New Exception("NG,Input Board Test Failed!")
+    '                End If
+    '            Else
+    '                DR.Close()
+    '                ErrorMsgToDisp = My.Resources.FVTResource.Msg_NoInputTestRecode
+    '                Throw New Exception("NG,Not found Input board test record!")
+    '            End If
+    '            If DR.IsClosed = False Then DR.Close()
+    '        End If
+    '        '----------------------------------------------------------------------
+    '        Found = False
+    '        StrQuery = "Select AssemblyResult from " & Me.TableControlBarcode & _
+    '                     " Where Barcode='" & Barcode2 & "'"
+    '        DR = MyBase.ExecuteDataReader(StrQuery)
+    '        If DR.HasRows Then
+    '            Found = True
+    '            DR.Read()
+    '            Dim Value As String = DR.Item(0).ToString
+    '            If Value = "P" Then
+    '                Result = "OK"
+    '            Else
+    '                DR.Close()
+    '                ErrorMsgToDisp = My.Resources.FVTResource.Msg_IGBTFailed
+    '                Throw New Exception("NG,IGBT Assembly result is Failed!")
+    '            End If
+    '        End If
+    '        If DR.IsClosed = False Then DR.Close()
+
+    '        If Not Found Then
+    '            StrQuery = "Select AssemblyResult from " & Me.TableControlBarcode_LastYear & _
+    '                       " Where Barcode='" & Barcode2 & "'"
+    '            DR = MyBase.ExecuteDataReader(StrQuery)
+    '            If DR.HasRows Then
+    '                DR.Read()
+    '                Dim Value As String = DR.Item(0).ToString
+    '                If Value = "P" Then
+    '                    Result = "OK"
+    '                Else
+    '                    DR.Close()
+    '                    ErrorMsgToDisp = My.Resources.FVTResource.Msg_IGBTFailed
+    '                    Throw New Exception("NG,IGBT Assembly result is Failed!")
+    '                End If
+    '            Else
+    '                DR.Close()
+    '                ErrorMsgToDisp = My.Resources.FVTResource.Msg_NoControlTestRecode
+    '                Result = "NG,Not found IGBT Assembly record!"
+    '            End If
+    '            If DR.IsClosed = False Then DR.Close()
+    '        End If
+
+    '    Catch ex As Exception
+    '        Result = ex.Message
+    '        If Not DR Is Nothing Then DR.Close()
+    '    Finally
+    '        Me.CloseDB()
+    '    End Try
+
+    '    Return Result
+    'End Function
+
+    'Public Function UpdateAsemblyResult(ByVal InputCode As String, ByVal ContorlCode As String, ByVal Result As Boolean) As String
+    '    Dim ID As String = ""
+    '    Dim MemResult As Boolean = False
+    '    Me.OpenDB()
+    '    Try
+    '        ID = Me.GetDMID(InputCode, ContorlCode)
+    '        If ID = "" Then
+    '            Call InserDM(InputCode, ContorlCode, Result)
+    '        Else
+    '            Dim StrUpdate As String = "Update " & Me.TableCompleteBarcode & " set AssemblyResult ='" & IIf(Result, "P", "F") & "',AssemblyDate='" & Date.Now.ToString("yyyy-MM-dd HH:mm:ss") & "' where ID=" & ID
+    '            MyBase.ExecuteNonQuery(StrUpdate)
+    '        End If
+    '        MemResult = True
+    '    Catch ex As Exception
+    '    Finally
+    '    End Try
+    '    Me.CloseDB()
+    '    Return MemResult
+    'End Function
+    '''' <summary>
+    '''' Get Datamatrix ID from table:Data_Datamatrix_2012
+    '''' </summary>
+    '''' <returns></returns>
+    '''' <remarks></remarks>
+    'Private Function GetDMID(ByVal InputCode As String, ByVal ContorlCode As String) As String
+    '    Dim ID As String = ""
+    '    Dim DR As SqlDataReader = Nothing
+    '    Try
+    '        Dim StrQuery As String = "Select ID from " & Me.TableCompleteBarcode & " where InputBarcode='" & InputCode & "' and ControlBarcode='" & ContorlCode & "'"
+    '        DR = MyBase.ExecuteDataReader(StrQuery)
+    '        If DR.HasRows Then
+    '            DR.Read()
+    '            ID = DR.Item(0).ToString
+    '        End If
+    '    Catch ex As Exception
+    '    Finally
+    '        DR.Close()
+    '    End Try
+    '    Return ID
+    'End Function
+    'Private Function InserDM(ByVal InputCode As String, ByVal ContorlCode As String, ByVal Result As Boolean) As Integer
+    '    Dim StrInsert As String = "Insert into " & Me.TableCompleteBarcode & "(InputBarcode,ControlBarcode,AssemblyResult,AssemblyDate) values ('" & InputCode & "','" & ContorlCode & "','" & IIf(Result, "P", "F") & "','" & Date.Now.ToString("yyyy-MM-dd HH:mm:ss") & "')"
+    '    MyBase.ExecuteNonQuery(StrInsert)
+    'End Function
+
+    'Public Sub ExportReport(ByVal QueryCondition As String, ByVal DesFile As String)
+
+    '    Try
+    '        Me.OpenDB()
+    '        Dim tblSql As New System.Data.DataTable
+    '        tblSql = MyBase.ExecuteQuery_DataTable(QueryCondition)
+    '        If tblSql.Rows.Count <> 0 Then
+    '            toExcel(DesFile, tblSql)
+    '        Else
+    '            MsgBox("没有查找到相应的记录")
+    '        End If
+
+    '    Catch ex As Exception
+    '        MsgBox(ex.Message, MsgBoxStyle.Exclamation)
+    '    Finally
+    '        Me.CloseDB()
+    '    End Try
+
+    'End Sub
+    'Private Sub toExcel(ByVal fileName As String, ByVal dt As System.Data.DataTable)
+    '    Dim xlsApp As New Microsoft.Office.Interop.Excel.Application
+    '    Dim xlsBook As Workbook = Nothing
+    '    Dim xlsSheet As Worksheet = Nothing
+    '    Dim xlsTemplatePath = My.Application.Info.DirectoryPath & "\SysFile\Model\Model_B10FVT2.xlsx"
+
+    '    Dim i As Integer
+    '    Dim j As Integer
+    '    'open excel template 
+    '    Try
+    '        xlsBook = xlsApp.Workbooks.Open(xlsTemplatePath)
+    '        xlsBook.Activate()
+    '        xlsSheet = xlsBook.Worksheets(1)
+    '        xlsSheet.Activate()
+    '    Catch ex As Exception
+    '        MsgBox(ex.Message)
+    '    End Try
+
+    '    'copy data
+    '    For i = 0 To dt.Rows.Count - 1
+    '        For j = 0 To dt.Columns.Count - 1
+    '            xlsApp.Cells(i + 3, j + 1) = dt.Rows(i).Item(j).ToString()
+    '        Next
+    '    Next
+
+    '    xlsBook.SaveAs(fileName)
+
+    '    xlsBook.Close(True)
+    '    xlsApp.Quit()
+
+    '    Dim generation As Integer = GC.GetGeneration(xlsApp)
+    '    GC.Collect(generation)
+    'End Sub
+
+End Class

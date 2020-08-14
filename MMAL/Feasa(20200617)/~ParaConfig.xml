@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="gb2312"?>
+<MMAL>
+<ENABLEFUJITRAX>0</ENABLEFUJITRAX>
+<ENABLERES>1</ENABLERES>
+<ENABLECUR>1</ENABLECUR>
+
+ <LEDRESS>
+  <LEDRES>
+	
+	<BIN>CA-3A</BIN>
+	<BITRONPART>15701057</BITRONPART>
+	<RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+	<RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+	<RESISTOR_OHM_S>510</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>CB-3A</BIN>
+	<BITRONPART>15701057</BITRONPART>
+	<RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+	<RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+	<RESISTOR_OHM_S>620</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>DA-3A</BIN>
+	<BITRONPART>15701057</BITRONPART>
+	<RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+	<RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+	<RESISTOR_OHM_S>909</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>CA-3B</BIN>
+	<BITRONPART>15701057</BITRONPART>
+	<RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+	<RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+	<RESISTOR_OHM_S>470</RESISTOR_OHM_S>
+  </LEDRES>
+
+  <LEDRES>
+	
+	<BIN>CB-3B</BIN>
+	<BITRONPART>15701057</BITRONPART>
+	<RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+	<RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+	<RESISTOR_OHM_S>620</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>DA-3B</BIN>
+	<BITRONPART>15701057</BITRONPART>
+	<RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+	<RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+	<RESISTOR_OHM_S>820</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>CA-4A</BIN>
+	<BITRONPART>15701057</BITRONPART>
+	<RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+	<RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+	<RESISTOR_OHM_S>430</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>CB-4A</BIN>
+	<BITRONPART>15701057</BITRONPART>
+	<RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+	<RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+	<RESISTOR_OHM_S>560</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>DA-4A</BIN>
+	<BITRONPART>15701057</BITRONPART>
+	<RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+	<RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+	<RESISTOR_OHM_S>750</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>CA-4B</BIN>
+	<BITRONPART>15701057</BITRONPART>
+	<RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+	<RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+	<RESISTOR_OHM_S>390</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+	
+	<BIN>CB-4B</BIN>
+	<BITRONPART>15701057</BITRONPART>
+	<RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+	<RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+	<RESISTOR_OHM_S>510</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+    
+    <BIN>DA-4B</BIN>
+    <BITRONPART>15701057</BITRONPART>
+    <RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+    <RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+    <RESISTOR_OHM_S>680</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+    
+    <BIN>CA-5A</BIN>
+    <BITRONPART>15701057</BITRONPART>
+    <RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+    <RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+    <RESISTOR_OHM_S>360</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+    
+    <BIN>CB-5A</BIN>
+    <BITRONPART>15701057</BITRONPART>
+    <RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+    <RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+    <RESISTOR_OHM_S>470</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+    
+    <BIN>DA-5A</BIN>
+    <BITRONPART>15701057</BITRONPART>
+    <RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+    <RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+    <RESISTOR_OHM_S>620</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+
+    <BIN>HY-J3</BIN>
+    <BITRONPART>15702224</BITRONPART>
+    <RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+    <RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+    <RESISTOR_OHM_S>82</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+
+    <BIN>HZ-J3</BIN>
+    <BITRONPART>15702224</BITRONPART>
+    <RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+    <RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+    <RESISTOR_OHM_S>91</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+
+    <BIN>JX-J3</BIN>
+    <BITRONPART>15702224</BITRONPART>
+    <RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+    <RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+    <RESISTOR_OHM_S>91</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+
+    <BIN>HY-M3</BIN>
+    <BITRONPART>15702224</BITRONPART>
+    <RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+    <RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+    <RESISTOR_OHM_S>76.8</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+
+    <BIN>HZ-M3</BIN>
+    <BITRONPART>15702224</BITRONPART>
+    <RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+    <RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+    <RESISTOR_OHM_S>91</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+
+    <BIN>JX-M3</BIN>
+    <BITRONPART>15702224</BITRONPART>
+    <RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+    <RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+    <RESISTOR_OHM_S>88.7</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+
+    <BIN>HY-Q3</BIN>
+    <BITRONPART>15702224</BITRONPART>
+    <RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+    <RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+    <RESISTOR_OHM_S>75</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+
+    <BIN>HZ-Q3</BIN>
+    <BITRONPART>15702224</BITRONPART>
+    <RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+    <RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+    <RESISTOR_OHM_S>82.5</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+
+    <BIN>JX-Q3</BIN>
+    <BITRONPART>15702224</BITRONPART>
+    <RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+    <RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+    <RESISTOR_OHM_S>82.5</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+
+    <BIN>HY-T3</BIN>
+    <BITRONPART>15702224</BITRONPART>
+    <RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+    <RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+    <RESISTOR_OHM_S>71.5</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+
+    <BIN>HZ-T3</BIN>
+    <BITRONPART>15702224</BITRONPART>
+    <RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+    <RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+    <RESISTOR_OHM_S>82.5</RESISTOR_OHM_S>
+  </LEDRES>
+  <LEDRES>
+
+    <BIN>JX-T3</BIN>
+    <BITRONPART>15702224</BITRONPART>
+    <RESISTOR_OHM_L>3%</RESISTOR_OHM_L>
+    <RESISTOR_OHM_H>3%</RESISTOR_OHM_H>
+    <RESISTOR_OHM_S>82</RESISTOR_OHM_S>
+  </LEDRES>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </LEDRESS>
+   
+    <Current_LimitS>
+  <Current_Limit>
+        <BIN>CA_HZ_9V</BIN>
+        <T_L>36</T_L>
+        <T_H>117.7</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+  <Current_Limit>
+        <BIN>CB_HZ_9V</BIN>
+        <T_L>8.82</T_L>
+        <T_H>56</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+  <Current_Limit>
+        <BIN>DA_HZ_9V</BIN>
+        <T_L>8.82</T_L>
+        <T_H>53</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+  
+    <Current_Limit>
+        <BIN>CA_JX_9V</BIN>
+        <T_L>72</T_L>
+        <T_H>123.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+  <Current_Limit>
+        <BIN>CB_JX_9V</BIN>
+        <T_L>64.8</T_L>
+        <T_H>112.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+  <Current_Limit>
+        <BIN>DA_JX_9V</BIN>
+        <T_L>56.7</T_L>
+        <T_H>101.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+  
+  <Current_Limit>
+        <BIN>CA_JY_9V</BIN>
+        <T_L>88.2</T_L>
+        <T_H>163.2</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+  <Current_Limit>
+        <BIN>CB_JY_9V</BIN>
+        <T_L>82.8</T_L>
+        <T_H>167.6</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+  <Current_Limit>
+        <BIN>DA_JY_9V</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>CA_HZ_13V5</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>CB_HZ_13V5</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>DA_HZ_13V5</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>CA_JX_13V5</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>CB_JX_13V5</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>DA_JX_13V5</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>CA_JY_13V5</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>CB_JY_13V5</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>DA_JY_13V5</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>CA_HZ_16V</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>CB_HZ_16V</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>DA_HZ_16V</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>CA_JX_16V</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>CB_JX_16V</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>DA_JX_16V</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>CA_JY_16V</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>CB_JY_16V</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+    <Current_Limit>
+        <BIN>DA_JY_16V</BIN>
+        <T_L>72.9</T_L>
+        <T_H>154.4</T_H>
+        <T_S>60</T_S>
+  </Current_Limit>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </Current_LimitS>
+
+  <TESTResStepS>
+  <TESTResStep>
+     <STEPNo>1</STEPNo>
+     <RunLabel>RES217</RunLabel>
+     <Modulux>0.001</Modulux>
+     <Formula>X%2</Formula>
+     <BIN>CA-4A</BIN>
+  </TESTResStep>
+  
+  <TESTResStep>
+     <STEPNo>2</STEPNo>
+     <RunLabel>RES218</RunLabel>
+     <Modulux>0.001</Modulux>
+     <Formula>X%2</Formula>
+     <BIN>CA-4A</BIN>
+  </TESTResStep>
+  
+   <TESTResStep>
+     <STEPNo>3</STEPNo>
+     <RunLabel>RES220</RunLabel>
+     <Modulux>0.001</Modulux>
+     <Formula>X%2</Formula>
+     <BIN>CA-4A</BIN>
+  </TESTResStep>
+  
+   <TESTResStep>
+     <STEPNo>4</STEPNo>
+     <RunLabel>RES224</RunLabel>
+     <Modulux>0.001</Modulux>
+     <Formula>X%2</Formula>
+     <BIN>CA-4A</BIN>
+  </TESTResStep>
+  
+  <TESTResStep>
+     <STEPNo>5</STEPNo>
+     <RunLabel>RES228</RunLabel>
+     <Modulux>0.001</Modulux>
+     <Formula>X%2</Formula>
+     <BIN>CA-4A</BIN>
+  </TESTResStep>
+  
+  <TESTResStep>
+     <STEPNo>6</STEPNo>
+     <RunLabel>RES239</RunLabel>
+     <Modulux>0.01</Modulux>
+     <Formula>X%3</Formula>
+     <BIN>CA-4A</BIN>
+  </TESTResStep>
+  
+  <TESTResStep>
+     <STEPNo>7</STEPNo>
+     <RunLabel>RES244</RunLabel>
+     <Modulux>0.01</Modulux>
+     <Formula>X%3</Formula>
+     <BIN>CA-4A</BIN>
+  </TESTResStep>
+  
+  <TESTResStep>
+     <STEPNo>8</STEPNo>
+     <RunLabel>RES249</RunLabel>
+     <Modulux>0.01</Modulux>
+     <Formula>X%3</Formula>
+     <BIN>CA-4A</BIN>
+  </TESTResStep>
+  
+  
+  
+  </TESTResStepS>
+  
+  
+  <TESTCurStepS>
+  <TESTCurStep>
+      <STEPNo>1</STEPNo>
+      <Description>Curr_Tail</Description>
+      <RunLabel>CUR_9V</RunLabel>
+      <Combination>LED200_LED300</Combination>
+      <BIN>CA_HY_9V</BIN>
+  </TESTCurStep>
+  
+    <TESTCurStep>
+      <STEPNo>2</STEPNo>
+      <Description>Curr_Tail</Description>
+      <RunLabel>CUR_13V5</RunLabel>
+      <Combination>LED200_LED300</Combination>
+      <BIN>CA_13V5</BIN>
+  </TESTCurStep>
+  <TESTCurStep>
+      <STEPNo>3</STEPNo>
+      <Description>Curr_Tail</Description>
+      <RunLabel>CUR_16V</RunLabel>
+      <Combination>LED200_LED300</Combination>
+      <BIN>CA_16V</BIN>
+  </TESTCurStep>
+  
+  </TESTCurStepS>
+  
+  
+  
+  
+</MMAL>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+;
+;		This acquisition plugin requires IDS drivers
+;
+;
+;UsrAcqDrv.ini
+
+
+[GENERAL]
+ERRORS= "c:\errori.csv"
+
+[CAMERA0]
+;config file name
+CONFIG= "C:\parametri.ini"
+
+
+[CAMERA1]
+;config file name
+CONFIG= "C:\parametriC.ini"
+
+
+[CAMERA2]
+;config file name
+CONFIG= "C:\parametri3.ini"

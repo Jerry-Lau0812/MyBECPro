@@ -1,0 +1,832 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Bitron Industrie S.p.A.  © TestBench Application 2012 3.2.1.1-->
+<Logins>
+  <Login LoginId="0">
+    <LoginDate>2013-01-11T20:53:11.815125+01:00</LoginDate>
+    <LogOutDate>2013-01-11T20:54:45.533875+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="1">
+    <LoginDate>2013-01-11T20:54:45.533875+01:00</LoginDate>
+    <LogOutDate>2013-01-11T20:57:22.783875+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="2">
+    <LoginDate>2013-01-11T20:57:22.783875+01:00</LoginDate>
+    <LogOutDate>2013-01-11T20:57:49.127625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="3">
+    <LoginDate>2013-01-11T20:57:49.127625+01:00</LoginDate>
+    <LogOutDate>2013-01-11T20:59:10.127625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="4">
+    <LoginDate>2013-01-11T20:59:10.127625+01:00</LoginDate>
+    <LogOutDate>2013-01-11T20:59:55.596375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="5">
+    <LoginDate>2013-01-11T20:59:55.596375+01:00</LoginDate>
+    <LogOutDate>2013-01-11T21:05:03.862+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="6">
+    <LoginDate>2013-01-11T21:05:03.862+01:00</LoginDate>
+    <LogOutDate>2013-01-11T21:07:28.89325+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="7">
+    <LoginDate>2013-01-11T21:07:28.89325+01:00</LoginDate>
+    <LogOutDate>2013-01-11T21:08:56.862+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="8">
+    <LoginDate>2013-01-11T21:08:56.862+01:00</LoginDate>
+    <LogOutDate>2013-01-11T21:11:28.065125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="9">
+    <LoginDate>2013-01-11T21:11:28.065125+01:00</LoginDate>
+    <LogOutDate>2013-01-11T21:12:02.627625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="10">
+    <LoginDate>2013-01-11T21:12:02.627625+01:00</LoginDate>
+    <LogOutDate>2013-01-11T21:51:07.828125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="11">
+    <LoginDate>2013-01-11T21:51:07.828125+01:00</LoginDate>
+    <LogOutDate>2013-01-11T21:51:56.78125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="12">
+    <LoginDate>2013-01-11T21:51:56.78125+01:00</LoginDate>
+    <LogOutDate>2013-01-12T19:20:07.984375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="13">
+    <LoginDate>2013-01-12T19:20:07.984375+01:00</LoginDate>
+    <LogOutDate>2013-01-12T19:29:11.75+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="14">
+    <LoginDate>2013-01-12T19:29:11.75+01:00</LoginDate>
+    <LogOutDate>2013-01-12T19:30:22.15625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="15">
+    <LoginDate>2013-01-12T19:30:22.15625+01:00</LoginDate>
+    <LogOutDate>2013-01-12T19:39:23.421875+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="16">
+    <LoginDate>2013-01-12T19:39:23.421875+01:00</LoginDate>
+    <LogOutDate>2013-01-12T23:10:20.34375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="17">
+    <LoginDate>2013-01-12T23:10:20.34375+01:00</LoginDate>
+    <LogOutDate>2013-01-13T13:53:44.96875+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="18">
+    <LoginDate>2013-01-13T13:53:44.96875+01:00</LoginDate>
+    <LogOutDate>2013-01-13T14:22:31.453125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="19">
+    <LoginDate>2013-01-13T14:22:31.453125+01:00</LoginDate>
+    <LogOutDate>2013-01-13T14:27:49.359375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="20">
+    <LoginDate>2013-01-13T14:27:49.359375+01:00</LoginDate>
+    <LogOutDate>2013-01-13T14:30:16.59375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="21">
+    <LoginDate>2013-01-13T14:30:16.59375+01:00</LoginDate>
+    <LogOutDate>2013-01-13T14:34:48.875+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="22">
+    <LoginDate>2013-01-13T14:34:48.875+01:00</LoginDate>
+    <LogOutDate>2013-01-13T14:38:27.234375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="23">
+    <LoginDate>2013-01-13T14:38:27.234375+01:00</LoginDate>
+    <LogOutDate>2013-01-13T14:40:36.609375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="24">
+    <LoginDate>2013-01-13T14:40:36.609375+01:00</LoginDate>
+    <LogOutDate>2013-01-13T14:46:20+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="25">
+    <LoginDate>2013-01-13T14:46:20+01:00</LoginDate>
+    <LogOutDate>2013-01-13T14:47:10.140625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="26">
+    <LoginDate>2013-01-13T14:47:10.140625+01:00</LoginDate>
+    <LogOutDate>2013-01-13T14:47:36.765625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="27">
+    <LoginDate>2013-01-13T14:47:36.765625+01:00</LoginDate>
+    <LogOutDate>2013-01-13T14:52:05.03125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="28">
+    <LoginDate>2013-01-13T14:52:05.03125+01:00</LoginDate>
+    <LogOutDate>2013-01-13T14:57:11.640625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="29">
+    <LoginDate>2013-01-13T14:57:11.640625+01:00</LoginDate>
+    <LogOutDate>2013-01-13T14:58:48.828125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="30">
+    <LoginDate>2013-01-13T14:58:48.828125+01:00</LoginDate>
+    <LogOutDate>2013-01-13T15:00:12.625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="31">
+    <LoginDate>2013-01-13T15:00:12.625+01:00</LoginDate>
+    <LogOutDate>2013-01-13T15:01:09.359375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="32">
+    <LoginDate>2013-01-13T15:01:09.359375+01:00</LoginDate>
+    <LogOutDate>2013-01-13T15:45:35.65625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="33">
+    <LoginDate>2013-01-13T15:45:35.65625+01:00</LoginDate>
+    <LogOutDate>2013-01-13T15:46:08.09375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="34">
+    <LoginDate>2013-01-13T15:46:08.09375+01:00</LoginDate>
+    <LogOutDate>2013-01-13T15:49:23.59375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="35">
+    <LoginDate>2013-01-13T15:49:23.59375+01:00</LoginDate>
+    <LogOutDate>2013-01-13T17:07:41.609375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="36">
+    <LoginDate>2013-01-13T17:07:41.609375+01:00</LoginDate>
+    <LogOutDate>2013-01-13T17:08:56.015625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="37">
+    <LoginDate>2013-01-13T17:08:56.015625+01:00</LoginDate>
+    <LogOutDate>2013-01-13T17:09:41.765625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="38">
+    <LoginDate>2013-01-13T17:09:41.765625+01:00</LoginDate>
+    <LogOutDate>2013-01-13T17:14:41.359375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="39">
+    <LoginDate>2013-01-13T17:14:41.359375+01:00</LoginDate>
+    <LogOutDate>2013-01-13T17:36:38.4375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="40">
+    <LoginDate>2013-01-13T17:36:38.4375+01:00</LoginDate>
+    <LogOutDate>2013-01-13T17:38:46.953125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="41">
+    <LoginDate>2013-01-13T17:38:46.953125+01:00</LoginDate>
+    <LogOutDate>2013-01-13T18:17:56.609375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="42">
+    <LoginDate>2013-01-13T18:17:56.609375+01:00</LoginDate>
+    <LogOutDate>2013-01-13T18:21:11.640625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="43">
+    <LoginDate>2013-01-13T18:21:11.640625+01:00</LoginDate>
+    <LogOutDate>2013-01-13T19:03:58.53125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="44">
+    <LoginDate>2013-01-13T19:03:58.53125+01:00</LoginDate>
+    <LogOutDate>2013-01-13T19:07:38.609375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="45">
+    <LoginDate>2013-01-13T19:07:38.609375+01:00</LoginDate>
+    <LogOutDate>2013-01-13T19:09:00.625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="46">
+    <LoginDate>2013-01-13T19:09:00.625+01:00</LoginDate>
+    <LogOutDate>2013-01-13T19:09:26.390625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="47">
+    <LoginDate>2013-01-13T19:09:26.390625+01:00</LoginDate>
+    <LogOutDate>2013-01-13T19:10:45.125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="48">
+    <LoginDate>2013-01-13T19:10:45.125+01:00</LoginDate>
+    <LogOutDate>2013-01-13T19:11:02.90625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="49">
+    <LoginDate>2013-01-13T19:11:02.90625+01:00</LoginDate>
+    <LogOutDate>2013-01-13T20:26:09.265625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="50">
+    <LoginDate>2013-01-13T20:26:09.265625+01:00</LoginDate>
+    <LogOutDate>2013-01-13T20:26:39.921875+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="51">
+    <LoginDate>2013-01-13T20:26:39.921875+01:00</LoginDate>
+    <LogOutDate>2013-01-13T20:41:44.46875+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="52">
+    <LoginDate>2013-01-13T20:41:44.46875+01:00</LoginDate>
+    <LogOutDate>2013-01-14T09:48:16.515625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="53">
+    <LoginDate>2013-01-14T09:48:16.515625+01:00</LoginDate>
+    <LogOutDate>2013-01-14T09:48:30.9375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="54">
+    <LoginDate>2013-01-14T09:48:30.9375+01:00</LoginDate>
+    <LogOutDate>2013-01-14T10:33:07.0625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="55">
+    <LoginDate>2013-01-14T10:33:07.0625+01:00</LoginDate>
+    <LogOutDate>2013-01-14T10:34:25.34375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="56">
+    <LoginDate>2013-01-14T10:34:25.34375+01:00</LoginDate>
+    <LogOutDate>2013-01-14T10:41:46.09375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="57">
+    <LoginDate>2013-01-14T10:41:46.09375+01:00</LoginDate>
+    <LogOutDate>2013-01-14T10:47:11.6875+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="58">
+    <LoginDate>2013-01-14T10:47:11.6875+01:00</LoginDate>
+    <LogOutDate>2013-01-14T10:47:33.84375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="59">
+    <LoginDate>2013-01-14T10:47:33.84375+01:00</LoginDate>
+    <LogOutDate>2013-01-14T10:47:49.703125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="60">
+    <LoginDate>2013-01-14T10:47:49.703125+01:00</LoginDate>
+    <LogOutDate>2013-01-14T10:48:02.203125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="61">
+    <LoginDate>2013-01-14T10:48:02.203125+01:00</LoginDate>
+    <LogOutDate>2013-01-14T10:49:30.953125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="62">
+    <LoginDate>2013-01-14T10:49:30.953125+01:00</LoginDate>
+    <LogOutDate>2013-01-14T10:49:41.703125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="63">
+    <LoginDate>2013-01-14T10:49:41.703125+01:00</LoginDate>
+    <LogOutDate>2013-01-14T10:59:19.515625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="64">
+    <LoginDate>2013-01-14T10:59:19.515625+01:00</LoginDate>
+    <LogOutDate>2013-01-14T11:00:21.9375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="65">
+    <LoginDate>2013-01-14T11:00:21.9375+01:00</LoginDate>
+    <LogOutDate>2013-01-14T11:07:25.484375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="66">
+    <LoginDate>2013-01-14T11:07:25.484375+01:00</LoginDate>
+    <LogOutDate>2013-01-14T11:07:35.34375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="67">
+    <LoginDate>2013-01-14T11:07:35.34375+01:00</LoginDate>
+    <LogOutDate>2013-01-14T11:07:50.109375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="68">
+    <LoginDate>2013-01-14T11:07:50.109375+01:00</LoginDate>
+    <LogOutDate>2013-01-14T11:08:19.59375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="69">
+    <LoginDate>2013-01-14T11:08:19.59375+01:00</LoginDate>
+    <LogOutDate>2013-01-14T18:23:45.640625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="70">
+    <LoginDate>2013-01-14T18:23:45.640625+01:00</LoginDate>
+    <LogOutDate>2013-01-14T18:43:02.140625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="71">
+    <LoginDate>2013-01-14T18:43:02.140625+01:00</LoginDate>
+    <LogOutDate>2013-01-14T18:44:17.390625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="72">
+    <LoginDate>2013-01-14T18:44:17.390625+01:00</LoginDate>
+    <LogOutDate>2013-01-14T18:46:23.09375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="73">
+    <LoginDate>2013-01-14T18:46:23.09375+01:00</LoginDate>
+    <LogOutDate>2013-01-14T18:49:31.046875+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="74">
+    <LoginDate>2013-01-14T18:49:31.046875+01:00</LoginDate>
+    <LogOutDate>2013-01-14T18:50:39.03125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="75">
+    <LoginDate>2013-01-14T18:50:39.03125+01:00</LoginDate>
+    <LogOutDate>2013-01-14T18:52:17.5625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="76">
+    <LoginDate>2013-01-14T18:52:17.5625+01:00</LoginDate>
+    <LogOutDate>2013-01-14T18:52:47.125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="77">
+    <LoginDate>2013-01-14T18:52:47.125+01:00</LoginDate>
+    <LogOutDate>2013-01-14T18:53:11.03125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="78">
+    <LoginDate>2013-01-14T18:53:11.03125+01:00</LoginDate>
+    <LogOutDate>2013-01-14T19:00:39.34375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="79">
+    <LoginDate>2013-01-14T19:00:39.34375+01:00</LoginDate>
+    <LogOutDate>2013-01-14T19:06:11.078125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="80">
+    <LoginDate>2013-01-14T19:06:11.078125+01:00</LoginDate>
+    <LogOutDate>2013-01-14T19:06:34.390625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="81">
+    <LoginDate>2013-01-14T19:06:34.390625+01:00</LoginDate>
+    <LogOutDate>2013-01-14T20:30:45.46875+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="82">
+    <LoginDate>2013-01-14T20:30:45.46875+01:00</LoginDate>
+    <LogOutDate>2013-01-14T23:38:46+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="83">
+    <LoginDate>2013-01-14T23:38:46+01:00</LoginDate>
+    <LogOutDate>2013-01-15T08:29:46.359375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="84">
+    <LoginDate>2013-01-15T08:29:46.359375+01:00</LoginDate>
+    <LogOutDate>2013-01-15T09:00:38.59375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="85">
+    <LoginDate>2013-01-15T09:00:38.59375+01:00</LoginDate>
+    <LogOutDate>2013-01-15T09:07:32.03125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="86">
+    <LoginDate>2013-01-15T09:07:32.03125+01:00</LoginDate>
+    <LogOutDate>2013-01-15T11:17:00.609375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="87">
+    <LoginDate>2013-01-15T11:17:00.609375+01:00</LoginDate>
+    <LogOutDate>2013-01-15T11:17:18.53125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="88">
+    <LoginDate>2013-01-15T11:17:18.53125+01:00</LoginDate>
+    <LogOutDate>2013-01-15T11:29:02.859375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="89">
+    <LoginDate>2013-01-15T11:29:02.859375+01:00</LoginDate>
+    <LogOutDate>2013-01-15T11:29:14.28125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="90">
+    <LoginDate>2013-01-15T11:29:14.28125+01:00</LoginDate>
+    <LogOutDate>2013-01-15T11:32:50.078125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="91">
+    <LoginDate>2013-01-15T11:32:50.078125+01:00</LoginDate>
+    <LogOutDate>2013-01-15T11:33:00.375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="92">
+    <LoginDate>2013-01-15T11:33:00.375+01:00</LoginDate>
+    <LogOutDate>2013-01-15T11:47:58.671875+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="93">
+    <LoginDate>2013-01-15T11:47:58.671875+01:00</LoginDate>
+    <LogOutDate>2013-01-15T12:00:17.15625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="94">
+    <LoginDate>2013-01-15T12:00:17.15625+01:00</LoginDate>
+    <LogOutDate>2013-01-15T16:51:51.984375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="95">
+    <LoginDate>2013-01-15T16:51:51.984375+01:00</LoginDate>
+    <LogOutDate>2013-01-15T16:53:30.3125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="96">
+    <LoginDate>2013-01-15T16:53:30.3125+01:00</LoginDate>
+    <LogOutDate>2013-01-15T21:34:54.375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="97">
+    <LoginDate>2013-01-15T21:34:54.375+01:00</LoginDate>
+    <LogOutDate>2013-01-15T21:38:55.203125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="98">
+    <LoginDate>2013-01-15T21:38:55.203125+01:00</LoginDate>
+    <LogOutDate>2013-01-16T08:31:03.125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="99">
+    <LoginDate>2013-01-16T08:31:03.125+01:00</LoginDate>
+    <LogOutDate>2013-01-16T08:31:14.125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="100">
+    <LoginDate>2013-01-16T08:31:14.125+01:00</LoginDate>
+    <LogOutDate>2013-01-16T08:31:24.6875+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="101">
+    <LoginDate>2013-01-16T08:31:24.6875+01:00</LoginDate>
+    <LogOutDate>2013-01-16T08:33:08.515625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="102">
+    <LoginDate>2013-01-16T08:33:08.515625+01:00</LoginDate>
+    <LogOutDate>2013-01-16T08:33:18.78125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="103">
+    <LoginDate>2013-01-16T08:33:18.78125+01:00</LoginDate>
+    <LogOutDate>2013-01-16T08:33:29.8125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="104">
+    <LoginDate>2013-01-16T08:33:29.8125+01:00</LoginDate>
+    <LogOutDate>2013-01-16T08:50:54.53125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="105">
+    <LoginDate>2013-01-16T08:50:54.53125+01:00</LoginDate>
+    <LogOutDate>2013-01-16T08:51:05.59375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="106">
+    <LoginDate>2013-01-16T08:51:05.59375+01:00</LoginDate>
+    <LogOutDate>2013-01-16T08:51:17.5625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="107">
+    <LoginDate>2013-01-16T08:51:17.5625+01:00</LoginDate>
+    <LogOutDate>2013-01-16T08:59:50.921875+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="108">
+    <LoginDate>2013-01-16T08:59:50.921875+01:00</LoginDate>
+    <LogOutDate>2013-01-16T09:18:46.734375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="109">
+    <LoginDate>2013-01-16T09:18:46.734375+01:00</LoginDate>
+    <LogOutDate>2013-01-16T09:19:07.015625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="110">
+    <LoginDate>2013-01-16T09:19:07.015625+01:00</LoginDate>
+    <LogOutDate>2013-01-16T09:19:29.40625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="111">
+    <LoginDate>2013-01-16T09:19:29.40625+01:00</LoginDate>
+    <LogOutDate>2013-01-16T09:19:39.90625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="112">
+    <LoginDate>2013-01-16T09:19:39.90625+01:00</LoginDate>
+    <LogOutDate>2013-01-16T09:19:50.328125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="113">
+    <LoginDate>2013-01-16T09:19:50.328125+01:00</LoginDate>
+    <LogOutDate>2013-01-16T09:20:01.140625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="114">
+    <LoginDate>2013-01-16T09:20:01.140625+01:00</LoginDate>
+    <LogOutDate>2013-01-16T10:12:30.84375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="115">
+    <LoginDate>2013-01-16T10:12:30.84375+01:00</LoginDate>
+    <LogOutDate>2013-01-16T10:12:43.859375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="116">
+    <LoginDate>2013-01-16T10:12:43.859375+01:00</LoginDate>
+    <LogOutDate>2013-01-16T10:12:47.28125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="117">
+    <LoginDate>2013-01-16T10:12:47.28125+01:00</LoginDate>
+    <LogOutDate>2013-01-16T10:21:58.453125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="118">
+    <LoginDate>2013-01-16T10:21:58.453125+01:00</LoginDate>
+    <LogOutDate>2013-01-16T10:22:10.71875+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="119">
+    <LoginDate>2013-01-16T10:22:10.71875+01:00</LoginDate>
+    <LogOutDate>2013-01-16T10:22:20.53125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="120">
+    <LoginDate>2013-01-16T10:22:20.53125+01:00</LoginDate>
+    <LogOutDate>2013-01-16T10:22:46.75+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="121">
+    <LoginDate>2013-01-16T10:22:46.75+01:00</LoginDate>
+    <LogOutDate>2013-01-16T10:25:08.640625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="122">
+    <LoginDate>2013-01-16T10:25:08.640625+01:00</LoginDate>
+    <LogOutDate>2013-01-16T10:26:47.78125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="123">
+    <LoginDate>2013-01-16T10:26:47.78125+01:00</LoginDate>
+    <LogOutDate>2013-01-16T10:28:41.515625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="124">
+    <LoginDate>2013-01-16T10:28:41.515625+01:00</LoginDate>
+    <LogOutDate>2013-01-16T10:34:34.359375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="125">
+    <LoginDate>2013-01-16T10:34:34.359375+01:00</LoginDate>
+    <LogOutDate>2013-01-16T10:34:45.265625+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="126">
+    <LoginDate>2013-01-16T10:34:45.265625+01:00</LoginDate>
+    <LogOutDate>2013-01-16T10:34:56.03125+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="127">
+    <LoginDate>2013-01-16T10:34:56.03125+01:00</LoginDate>
+    <LogOutDate>2013-01-16T10:54:20.9375+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="128">
+    <LoginDate>2013-01-16T10:54:20.9375+01:00</LoginDate>
+    <LogOutDate>2013-01-17T15:18:01.2913806+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="129">
+    <LoginDate>2013-01-17T15:18:01.2913806+01:00</LoginDate>
+    <LogOutDate>2013-01-17T15:18:16.6976306+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="130">
+    <LoginDate>2013-01-17T15:18:16.6976306+01:00</LoginDate>
+    <LogOutDate>2013-01-17T15:18:26.5726306+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="131">
+    <LoginDate>2013-01-17T15:18:26.5726306+01:00</LoginDate>
+    <LogOutDate>2013-01-17T15:18:35.5413806+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="132">
+    <LoginDate>2013-01-17T15:18:35.5413806+01:00</LoginDate>
+    <LogOutDate>2013-01-17T15:19:56.1507556+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="133">
+    <LoginDate>2013-01-17T15:19:56.1507556+01:00</LoginDate>
+    <LogOutDate>2013-01-17T15:39:13.3382556+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="134">
+    <LoginDate>2013-01-17T15:39:13.3382556+01:00</LoginDate>
+    <LogOutDate>2013-01-17T15:39:44.2288806+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="135">
+    <LoginDate>2013-01-17T15:39:44.2288806+01:00</LoginDate>
+    <LogOutDate>2013-01-17T15:41:24.6195056+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="136">
+    <LoginDate>2013-01-17T15:41:24.6195056+01:00</LoginDate>
+    <LogOutDate>2013-01-17T15:45:03.6507556+01:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+  <Login LoginId="137">
+    <LoginDate>2013-01-17T15:45:03.6507556+01:00</LoginDate>
+    <LogOutDate>0001-01-01T00:00:00</LogOutDate>
+    <BenchId>3619DC92-CEDF-4ABC-B86F-A7D1DFD0500A</BenchId>
+    <OperatorId>30DEC50F-CE04-4FCB-8AC2-E3AB2EF9D6B8</OperatorId>
+  </Login>
+</Logins>

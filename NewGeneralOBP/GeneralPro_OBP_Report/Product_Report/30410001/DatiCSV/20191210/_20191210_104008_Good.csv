@@ -1,0 +1,17 @@
+﻿StationID;FCT_22
+Operator;孙莎莎
+BenchSN;350
+UUT Serial Number;
+Batch Serial Number;156
+Test Socket Index;1
+Version_SW;
+Version_HW;
+
+Sequence;Step Name;Status;Date;Time;Value;Units;LimitLow;LimitHigh;Normal
+1;Check Barcode;Passed;2019-12-10;10:40:18;;-;-;-;OK
+2;Test1;Passed;2019-12-10;10:40:21;;-;-;-;OK
+2-1;Test2;Passed;2019-12-10;10:40:41;0;_;0.000;12.000;-
+2-2;Test3;Passed;2019-12-10;10:41:13;;-;-;-;OK
+
+UUT Serial Number;
+UUT Status;Pass

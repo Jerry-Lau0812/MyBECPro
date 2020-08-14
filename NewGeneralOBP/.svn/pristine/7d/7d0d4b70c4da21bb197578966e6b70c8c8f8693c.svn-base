@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PROJECT name="DAB MQ FVT">
+  <PARAMETERS>
+    <!--If you have a parameters for Project,insert here -->
+    <SET>
+    </SET>
+    <GET>
+    </GET>
+  </PARAMETERS>
+  <PRODUCT type="DAB MQ">
+    <PARAMETERS>
+      <!--If you have a parameters for family,insert here-->
+      <SET>
+      </SET>
+      <GET>
+      </GET>
+    </PARAMETERS>
+    <CONFIGE user="DEFAULT">
+      <PARAMETERS>
+        <!--If you have a parameters for product,insert here -->
+        <SET>
+          <!--PARAMETER name="var_ComboIndex" type="S_DOUBLE" skip="false">1</PARAMETER-->
+        </SET>
+        <GET>
+        </GET>
+      </PARAMETERS>
+      <UUT pos="UUT1">
+        <COMBO id="1" combination="ALLON" imagewindow="UUT_Color" skip="false">
+          <CHECK_PRESENCE>
+            <IDEO id="1" name="Ideo1" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo1_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>20</LIMIT_MIN>
+                <LIMIT_MAX>400</LIMIT_MAX>
+              </SCORE>
+              <NAME>
+                <VAR_NAME>var1_Ideo1_ColorName</VAR_NAME>
+                <VAR_TYPE>S_STRING</VAR_TYPE>
+                <LIMIT_MIN>red</LIMIT_MIN>
+                <LIMIT_MAX>red</LIMIT_MAX>
+              </NAME>
+            </IDEO>
+            <IDEO id="2" name="Ideo2" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo2_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>20</LIMIT_MIN>
+                <LIMIT_MAX>400</LIMIT_MAX>
+              </SCORE>
+              <NAME>
+                <VAR_NAME>var1_Ideo2_ColorName</VAR_NAME>
+                <VAR_TYPE>S_STRING</VAR_TYPE>
+                <LIMIT_MIN>green</LIMIT_MIN>
+                <LIMIT_MAX>green</LIMIT_MAX>
+              </NAME>
+            </IDEO>
+            <IDEO id="3" name="Ideo3" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo3_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>20</LIMIT_MIN>
+                <LIMIT_MAX>400</LIMIT_MAX>
+              </SCORE>
+              <NAME>
+                <VAR_NAME>var1_Ideo3_ColorName</VAR_NAME>
+                <VAR_TYPE>S_STRING</VAR_TYPE>
+                <LIMIT_MIN>green</LIMIT_MIN>
+                <LIMIT_MAX>green</LIMIT_MAX>
+              </NAME>
+            </IDEO>
+            <IDEO id="4" name="Ideo4" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo4_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>20</LIMIT_MIN>
+                <LIMIT_MAX>400</LIMIT_MAX>
+              </SCORE>
+              <NAME>
+                <VAR_NAME>var1_Ideo4_ColorName</VAR_NAME>
+                <VAR_TYPE>S_STRING</VAR_TYPE>
+                <LIMIT_MIN>red</LIMIT_MIN>
+                <LIMIT_MAX>red</LIMIT_MAX>
+              </NAME>
+            </IDEO>
+            <IDEO id="5" name="Ideo5" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo5_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>20</LIMIT_MIN>
+                <LIMIT_MAX>400</LIMIT_MAX>
+              </SCORE>
+              <NAME>
+                <VAR_NAME>var1_Ideo5_ColorName</VAR_NAME>
+                <VAR_TYPE>S_STRING</VAR_TYPE>
+                <LIMIT_MIN>green</LIMIT_MIN>
+                <LIMIT_MAX>green</LIMIT_MAX>
+              </NAME>
+            </IDEO>
+          </CHECK_PRESENCE>
+        </COMBO>
+        <COMBO id="2" combination="DL5DL4DL3" imagewindow="UUT_Color" skip="false">
+          <CHECK_PRESENCE>
+            <IDEO id="1" name="Ideo1" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo1_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>0</LIMIT_MIN>
+                <LIMIT_MAX>0</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="2" name="Ideo2" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo2_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>0</LIMIT_MIN>
+                <LIMIT_MAX>0</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="3" name="Ideo3" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo3_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>1</LIMIT_MIN>
+                <LIMIT_MAX>1</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="4" name="Ideo4" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo4_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>1</LIMIT_MIN>
+                <LIMIT_MAX>1</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="5" name="Ideo5" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo5_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>1</LIMIT_MIN>
+                <LIMIT_MAX>1</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+          </CHECK_PRESENCE>
+        </COMBO>
+        <COMBO id="3" combination="DL5DL4" imagewindow="UUT_Color" skip="false">
+          <CHECK_PRESENCE>
+            <IDEO id="1" name="Ideo1" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo1_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>0</LIMIT_MIN>
+                <LIMIT_MAX>0</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="2" name="Ideo2" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo2_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>0</LIMIT_MIN>
+                <LIMIT_MAX>0</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="3" name="Ideo3" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo3_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>0</LIMIT_MIN>
+                <LIMIT_MAX>0</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="4" name="Ideo4" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo4_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>1</LIMIT_MIN>
+                <LIMIT_MAX>1</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="5" name="Ideo5" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo5_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>1</LIMIT_MIN>
+                <LIMIT_MAX>1</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+          </CHECK_PRESENCE>
+        </COMBO>
+        <COMBO id="4" combination="DL3" imagewindow="UUT_Color" skip="false">
+          <CHECK_PRESENCE>
+            <IDEO id="1" name="Ideo1" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo1_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>0</LIMIT_MIN>
+                <LIMIT_MAX>0</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="2" name="Ideo2" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo2_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>0</LIMIT_MIN>
+                <LIMIT_MAX>0</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="3" name="Ideo3" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo3_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>1</LIMIT_MIN>
+                <LIMIT_MAX>1</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="4" name="Ideo4" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo4_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>0</LIMIT_MIN>
+                <LIMIT_MAX>0</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="5" name="Ideo5" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo5_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>0</LIMIT_MIN>
+                <LIMIT_MAX>0</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+          </CHECK_PRESENCE>
+        </COMBO>
+        <COMBO id="5" combination="DL2" imagewindow="UUT_Color" skip="false">
+          <CHECK_PRESENCE>
+            <IDEO id="1" name="Ideo1" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo1_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>0</LIMIT_MIN>
+                <LIMIT_MAX>0</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="2" name="Ideo2" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo2_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>1</LIMIT_MIN>
+                <LIMIT_MAX>1</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="3" name="Ideo3" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo3_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>0</LIMIT_MIN>
+                <LIMIT_MAX>0</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="4" name="Ideo4" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo4_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>1</LIMIT_MIN>
+                <LIMIT_MAX>1</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="5" name="Ideo5" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo5_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>1</LIMIT_MIN>
+                <LIMIT_MAX>1</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+          </CHECK_PRESENCE>
+        </COMBO>
+        <COMBO id="6" combination="DL1" imagewindow="UUT_Color" skip="false">
+          <CHECK_PRESENCE>
+            <IDEO id="1" name="Ideo1" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo1_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>1</LIMIT_MIN>
+                <LIMIT_MAX>1</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="2" name="Ideo2" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo2_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>0</LIMIT_MIN>
+                <LIMIT_MAX>0</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="3" name="Ideo3" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo3_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>0</LIMIT_MIN>
+                <LIMIT_MAX>0</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="4" name="Ideo4" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo4_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>1</LIMIT_MIN>
+                <LIMIT_MAX>1</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+            <IDEO id="5" name="Ideo5" type="Color Presence.dominant percent">
+              <SCORE>
+                <VAR_NAME>var1_Ideo5_ColorCount</VAR_NAME>
+                <VAR_TYPE>S_DOUBLE</VAR_TYPE>
+                <LIMIT_MIN>1</LIMIT_MIN>
+                <LIMIT_MAX>1</LIMIT_MAX>
+              </SCORE>
+            </IDEO>
+          </CHECK_PRESENCE>
+        </COMBO>
+      </UUT>
+    </CONFIGE>
+  </PRODUCT>
+</PROJECT>

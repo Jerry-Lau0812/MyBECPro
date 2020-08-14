@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CONFIGE>
+  <SYSTEM>
+    <PROJECTS>
+      <NAME>Demo_Model</NAME>
+      <VERSION>Ver1.0</VERSION>
+      <UUTNUM>2</UUTNUM>
+      <LANGUAGE>0</LANGUAGE>
+    </PROJECTS>
+    <RUNMODES>
+      <DISPMODE>2</DISPMODE>
+      <STARTTYPE>0</STARTTYPE>
+      <TESTSEQUENCE>0</TESTSEQUENCE>
+      <SAVELOGFILE>0</SAVELOGFILE>
+      <SAVE_BENCH_RPT>0</SAVE_BENCH_RPT>
+      <FixMoveType>1</FixMoveType>
+      <MemToLocalDB>1</MemToLocalDB>
+      <ShowProblemNotice>1</ShowProblemNotice>
+    </RUNMODES>
+    <PATHS>
+      <PATH_ROOTRPT>\\10.150.10.10\daticoll\Benches\_Model</PATH_ROOTRPT>
+      <PATH_TESTREPORT>%PATH_ROOTRPT%\Product_Report\</PATH_TESTREPORT>
+      <PATH_BENCH_XML>%PATH_ROOTRPT%\XML\XMLBench.xml</PATH_BENCH_XML>
+      <PATH_BENCH_REPORT>%PATH_ROOTRPT%\OUTPUT\</PATH_BENCH_REPORT>
+      <PATH_OPRATOR>\\10.150.10.10\Daticoll\FVT Program\FILE_MTS\operator.dat</PATH_OPRATOR>
+    </PATHS>
+    <MANUAL_SCANLABEL>
+      <USE>0</USE>
+      <COUNT>1</COUNT>
+    </MANUAL_SCANLABEL>
+    <FailTube>
+      <USE>0</USE>
+      <ReadMode>0</ReadMode>
+      <CheckReceive>0</CheckReceive>
+      <WaitTime>0</WaitTime>
+    </FailTube>
+    <SCANFICHES>
+      <PRODUCTS>
+        <PRODUCT code="DEFAULT" scan="N">
+          <LAYOUT_SCAN use="Y" scanpcb="Y" scanExt="N" scanLayoutCode="N">8</LAYOUT_SCAN>
+          <CHECKBOXFULL check="N">84</CHECKBOXFULL>
+          <COUNTWUXI check="N">100</COUNTWUXI>
+        </PRODUCT>
+      </PRODUCTS>
+      <CHECKLABELDUPL>0</CHECKLABELDUPL>
+      <SAVEFICHES>1</SAVEFICHES>
+      <PATH_SAVEFICHES>%PATH_ROOTRPT%\Product_Report\Fiches\</PATH_SAVEFICHES>
+    </SCANFICHES>
+    <MTSREPORT>
+      <USE>0</USE>
+      <PATH_REPORT>\\10.150.10.10\daticoll\FVT Program\FILE_MTS\</PATH_REPORT>
+      <CODEOPERATOR>91</CODEOPERATOR>
+      <CODETESTER>00000</CODETESTER>
+      <CODESTATION>U8</CODESTATION>
+    </MTSREPORT>
+    <SUPERVISUAL>
+      <USE>0</USE>
+      <SQLSERVER>10.150.10.11\reparto</SQLSERVER>
+      <BenchSN>0</BenchSN>
+	  <FixtureSN>0</FixtureSN>
+	  <StationID>FCT_XXXX</StationID>
+      <SuperDataPath>\\10.150.10.10\daticoll\FVT Data\</SuperDataPath>
+      <GenerateTestDetail>1</GenerateTestDetail>
+    </SUPERVISUAL>
+  </SYSTEM>
+  <SHERLOCK>
+    <CAMERANUM>0</CAMERANUM>
+    <USE_UEYE>1</USE_UEYE>
+    <TH_RANGE>10</TH_RANGE>
+    <SAVE_ALL>0</SAVE_ALL>
+    <SAVE_FAIL>0</SAVE_FAIL>
+    <SAVE_TEMP>0</SAVE_TEMP>
+    <PATH_ALL>%PROJECT%\SherlockProject\Report\SherLockImage\AllImage\</PATH_ALL>
+    <PATH_FAIL>%PROJECT%\SherlockProject\Report\SherLockImage\FailImage\</PATH_FAIL>
+    <PATH_TEMP>%PROJECT%\SherlockProject\Report\SherLockImage\</PATH_TEMP>
+    <PATH_REPORT>%PROJECT%\SherlockProject\Report\</PATH_REPORT>
+    <PATH_XMLCONFIGE>%PROJECT%\SherlockProject\DispConfige.xml</PATH_XMLCONFIGE>
+    <PATH_PROJECT>
+      <PROJECT code="DEFAULT">%PROJECT%\SherlockProject\MTSMED_AR\AR.ivs</PROJECT>
+    </PATH_PROJECT>
+  </SHERLOCK>
+  <CUSTOMER>
+    <!--Customer Parameter define
+     type=0:Number;String;Boolean.
+     type=1:FilePath.
+     type=2:FoldPath.-->
+    <PARAMETER id="1" name="ACOutFreqNum_Min" type="0">24</PARAMETER>
+    <PARAMETER id="2" name="ACOutFreqNum_Max" type="0">26</PARAMETER>
+  </CUSTOMER>
+</CONFIGE>

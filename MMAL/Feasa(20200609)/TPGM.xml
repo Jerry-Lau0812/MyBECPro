@@ -1,0 +1,92 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TPGM
+</name>
+</assembly>
+<members>
+<member name="M:TPGM.modTestplan.CheckBarcode(System.String@)">
+	<summary>
+ 获取并判断产品二维码
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TPGM.modTestplan.CheckFujiResult(System.String)">
+	<summary>
+ Check If can get result from FujiTrax
+ </summary>
+	<param name="DataMatrix"></param>
+	<remarks></remarks>
+</member><member name="M:TPGM.modTestplan.CheckVarient(System.String@)">
+	<summary>
+ 获取产品号
+ </summary>
+	<param name="ProgNo"></param>
+	<remarks></remarks>
+</member><member name="M:TPGM.modTestplan.CheckFeasa(System.Int32,System.Int32,System.String,System.String)">
+	<summary>
+ Feasa测试
+ </summary>
+	<param name="SiteNo"></param>
+	<param name="ProgNo"></param>
+	<remarks></remarks>
+</member><member name="M:TPGM.modTestplan.PrintResultMsg(System.Boolean,System.Int32,System.String,System.Object,System.Object,System.Object,System.String)">
+	<summary>
+ 标准结果打印
+ </summary>
+	<param name="TestFlag"></param>
+	<param name="NumSite"></param>
+	<param name="LEDName"></param>
+	<param name="Value"></param>
+	<param name="Hi_Limit"></param>
+	<param name="Lo_Limit"></param>
+	<param name="TestItem"></param>
+	<remarks></remarks>
+</member><member name="M:TPGM.modTestplan.CheckCxCyInArea(TPGM.modTestplan.Coordinate,System.Double,System.Double)">
+	<summary>
+ CxCy校验函数
+ </summary>
+	<param name="Coordinate"></param>
+	<param name="XLed"></param>
+	<param name="YLed"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TPGM.modTestplan.CollectFeasaValue(System.Collections.Generic.List{System.String})">
+	<summary>
+ Collect All Feasa Channel values based on used site.
+ </summary>
+	<param name="FeasaUse"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TPGM.modTestplan.GetFeasaNum(System.String)">
+	<summary>
+ Get all feasa count base one site
+ </summary>
+	<param name="NodeFeasa"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TPGM.modTestplan.GetAllUsedFeasa(System.Int32,System.String,System.String)">
+	<summary>
+ Get all FeasaUse in test
+ </summary>
+	<param name="SiteNo"></param>
+	<param name="Code_Biton"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TPGM.modTestplan.GetUsedFeasaAddr(System.Collections.Generic.List{System.String})">
+	<summary>
+ In a site test condition, it should be same addr of Device Feasa
+ </summary>
+	<param name="FeasaUse"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TPGM.modTestplan.GetFeasaAddr(System.String)">
+	<summary>
+ 根据FeasaName（e.g 75L3）获取Com地址
+ </summary>
+	<param name="NodeFeasa"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

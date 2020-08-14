@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HARDWARES>
+  <!--This file is used for the configuration of FVT-->
+  <PROJECT>
+    <NAME>
+    </NAME>
+  </PROJECT>
+  <INTERNAL>
+    <!--Board that can insert into Rack box -->
+    <HW type="0" name="PIC" exist="Y" desc="PIC Main Board">
+      <BOARD index="1" name="PIC_1" addr="0" used="Y">
+        <COM diag="Y" open="Y">
+          <PORT>1</PORT>
+          <BAUD>115200</BAUD>
+          <PARITY>N</PARITY>
+          <DATA>8</DATA>
+          <STOP>1</STOP>
+          <TIMEOUT>1000</TIMEOUT>
+        </COM>
+        <CMDS>
+          <CMD index="1" name="READY" used="Y" type="0">Check the communication with Main PIC</CMD>
+          <CMD index="2" name="VERSION" used="Y" type="0">Check the software version</CMD>
+          <CMD index="3" name="MTOS" used="Y" type="0">Set the time that keep machine on up position</CMD>
+          <CMD index="4" name="END0000" used="Y" type="0">End test</CMD>
+          <CMD index="5" name="MODE1" used="Y" type="0">Set the machine in Remote Debug mode</CMD>
+          <CMD index="6" name="START" used="Y" type="0">Start test when machine is On remote debug mode</CMD>
+          <CMD index="7" name="!~&lt;" used="Y" type="0">STX</CMD>
+          <CMD index="8" name="&gt;~!" used="Y" type="0">STX</CMD>
+        </CMDS>
+      </BOARD>
+    </HW>
+  </INTERNAL>
+  <EXTERNAL>
+    <!--Device that can't insert into Rack box -->
+    <HW type="17" name="ControlPIC" exist="Y" desc="Small PIC board that control machine up down with motor">
+      <DEVICE index="1" name="ControlPIC_1" addr="0" used="Y">
+        <COM diag="Y" open="Y">
+          <PORT>4</PORT>
+          <BAUD>115200</BAUD>
+          <PARITY>N</PARITY>
+          <DATA>8</DATA>
+          <STOP>1</STOP>
+          <TIMEOUT>1000</TIMEOUT>
+        </COM>
+        <Positions>
+          <DownPositon>0</DownPositon>
+          <MidPositon>20000</MidPositon>
+          <UpPositon>40000</UpPositon>
+        </Positions>
+      </DEVICE>
+    </HW>
+    <HW type="16" name="NewMOTOR" exist="Y" desc="Smart Motor with new Firmware">
+      <DEVICE index="1" name="NewMOTOR_1" addr="0" used="Y">
+        <COM diag="Y" open="Y">
+          <PORT>5</PORT>
+          <BAUD>9600</BAUD>
+          <PARITY>N</PARITY>
+          <DATA>8</DATA>
+          <STOP>1</STOP>
+          <TIMEOUT>1000</TIMEOUT>
+        </COM>
+        <MOTORS>
+          <MOTOR index="1" name="MOTOR_1" used="Y">
+            <PID>
+              <KP>60</KP>
+              <KI>80</KI>
+              <KD>50</KD>
+              <KL>40</KL>
+              <KS>1</KS>
+              <KV>80</KV>
+              <KA>80</KA>
+              <KG>0</KG>
+            </PID>
+            <ZERO>0</ZERO>
+            <SMADDR>129</SMADDR>
+            <OFFSET>0</OFFSET>
+            <TORQUE>100</TORQUE>
+          </MOTOR>
+          <MOTOR index="2" name="MOTOR_2" used="Y">
+            <PID>
+              <KP>60</KP>
+              <KI>80</KI>
+              <KD>50</KD>
+              <KL>40</KL>
+              <KS>1</KS>
+              <KV>80</KV>
+              <KA>80</KA>
+              <KG>0</KG>
+            </PID>
+            <ZERO>0</ZERO>
+            <SMADDR>130</SMADDR>
+            <OFFSET>0</OFFSET>
+            <TORQUE>100</TORQUE>
+          </MOTOR>
+        </MOTORS>
+        <SUBS>
+          <Sub index="1" name="Sub_0" used="Y">
+            <VT des="Motor speed">100000</VT>
+            <ADT des="Accelerate speed">1000</ADT>
+            <PRT des="Prepare for a relative move">
+            </PRT>
+            <PPos des="Error Position Positive value">
+            </PPos>
+            <NPos des="Error Position Negtive value">
+            </NPos>
+          </Sub>
+          <Sub index="2" name="Sub_1" used="Y">
+            <VT des="Motor speed">100000</VT>
+            <ADT des="Accelerate speed">
+            </ADT>
+            <PRT des="Prepare for a relative move">
+            </PRT>
+            <PPos des="Error Position Positive value">
+            </PPos>
+            <NPos des="Error Position Negtive value">
+            </NPos>
+          </Sub>
+          <Sub index="3" name="Sub_2" used="Y">
+            <VT des="Motor speed">100000</VT>
+            <ADT des="Accelerate speed">
+            </ADT>
+            <PRT des="Prepare for a relative move">
+            </PRT>
+            <PPos des="Error Position Positive value">
+            </PPos>
+            <NPos des="Error Position Negtive value">
+            </NPos>
+          </Sub>
+          <Sub index="4" name="Sub_3" used="Y">
+            <VT des="Motor speed">22000</VT>
+            <ADT des="Accelerate speed">
+            </ADT>
+            <PRT des="Prepare for a relative move">
+            </PRT>
+            <PPos des="Error Position Positive value">15</PPos>
+            <NPos des="Error Position Negtive value">-5</NPos>
+          </Sub>
+          <Sub index="5" name="Sub_4" used="Y">
+            <VT des="Motor speed">100000</VT>
+            <ADT des="Accelerate speed">
+            </ADT>
+            <PRT des="Prepare for a relative move">
+            </PRT>
+            <PPos des="Error Position Positive value">
+            </PPos>
+            <NPos des="Error Position Negtive value">
+            </NPos>
+          </Sub>
+        </SUBS>
+      </DEVICE>
+    </HW>
+  </EXTERNAL>
+</HARDWARES>

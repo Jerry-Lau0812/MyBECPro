@@ -1,0 +1,1901 @@
+<FUNZCONF>
+  <GENERAL>
+    
+    <GetBinCodeFromFujiTrax>1</GetBinCodeFromFujiTrax>
+    <BARCODE_ON>1</BARCODE_ON>
+    <FIGURE>2</FIGURE>
+    <NAMESYSTEM>SPEA</NAMESYSTEM>
+    <DB_CONNECTION_STRING>Data Source=10.140.13.12\BITRONDB1;Initial Catalog=Monitor;Persist Security Info=True;User ID=ECLIPSE;Password=Mes$#2010</DB_CONNECTION_STRING>
+    <DEBUG>1</DEBUG><SERIALGOLDEN>19918004803121410234</SERIALGOLDEN><FASE>6203013</FASE>
+<ID_RACK>0</ID_RACK>
+    
+    <LAN>0</LAN>
+    <COMNUM>1</COMNUM>
+    <FEASANUM>2</FEASANUM>
+    <NAME_FEASAS>
+   <NAME_FEASA>
+          <Addr>0</Addr>
+          <INDEX>0</INDEX>
+          <NAME>76L5</NAME>
+          <NUMCH>20</NUMCH>
+          <SIDE>BOTTOM</SIDE>
+    </NAME_FEASA>
+    <NAME_FEASA>
+          <Addr>1</Addr>
+          <INDEX>0</INDEX>
+          <NAME>76L3</NAME>
+          <NUMCH>20</NUMCH>
+          <SIDE>BOTTOM</SIDE>
+    </NAME_FEASA>
+
+    </NAME_FEASAS>
+
+    
+  </GENERAL>
+  
+  <HARDWARES>
+  <HW type="1" name="FEASA" desc="Feasa HWConfiguration">
+  <DEVICE index="0" name="FEASA_0" addr="0">
+    <PORT>8</PORT>
+    <VELOCITA>57600</VELOCITA>
+    <PARITA>0</PARITA>
+    <NUM_BIT>8</NUM_BIT>
+    <STOP_BIT>1</STOP_BIT>
+  </DEVICE>
+  </HW>
+  <HW type="1" name="FEASA" desc="Feasa HWConfiguration">
+  <DEVICE index="1" name="FEASA_1" addr="1">
+    <PORT>11</PORT>
+    <VELOCITA>57600</VELOCITA>
+    <PARITA>0</PARITA>
+    <NUM_BIT>8</NUM_BIT>
+    <STOP_BIT>1</STOP_BIT>
+  </DEVICE>
+  </HW>
+ </HARDWARES>
+    <LEDS>
+    <LED>
+         <CODE>15701307</CODE>
+         <COLOR>RED</COLOR>
+         <RANGE_BRIGHTNESS>5</RANGE_BRIGHTNESS>
+    <BIN_RANGE>
+      <BIN_NAME>DA-1-K3</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>21.8</INTENSITY_SL>
+     <INTENSITY_SH>26.6</INTENSITY_SH>
+     <DOMINANTWAVE_SL>616</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>620</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>EB23B</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>27.3</INTENSITY_SL>
+     <INTENSITY_SH>33.3</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P2WV3</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P2WV4</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P2XV1</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P2XV2</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P2XV3</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P2XV4</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P2YV1</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P2YV2</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P2YV3</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P2YV4</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P3WV1</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P3WV2</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P3WV3</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P3WV4</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE> <BIN_RANGE>
+      <BIN_NAME>P3XV1</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P3XV2</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P3XV3</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>26.8</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>616</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P3XV4</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P3YV1</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P3YV2</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+          <BIN_RANGE>
+      <BIN_NAME>P3YV3</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>80</SAT_SL>
+      <SAT_SH>120</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+     <CXCY_RANGE_AREA>
+            <POINT>1</POINT>
+            <CX>0.3002</CX>
+            <CY>0.2949</CY>
+            <NOTE/>
+     </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3083</CX>
+        <CY>0.3031</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3083</CX>
+        <CY>0.2934</CY>
+        <NOTE/>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+            <POINT>4</POINT>
+            <CX>0.2951</CX>
+            <CY>0.290</CY>
+            <NOTE/>
+      </CXCY_RANGE_AREA>
+     <INTENSITY_SL>1000</INTENSITY_SL>
+     <INTENSITY_SH>5500</INTENSITY_SH>
+     <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+     <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+     <VF_SL>2.05</VF_SL>
+     <VF_SH>2.20</VF_SH>
+     <NOTE>0</NOTE>
+         </BIN_RANGE>
+    <BIN_RANGE>
+      <BIN_NAME>P3YV4</BIN_NAME>
+      <HUE_SL>0</HUE_SL>
+      <HUE_SH>2</HUE_SH>
+      <SAT_SL>95</SAT_SL>
+      <SAT_SH>70</SAT_SH>
+      <ENABLE_CXCY>0</ENABLE_CXCY>
+      <CXCY_RANGE_AREA>
+        <POINT>1</POINT>
+        <CX>0.2951</CX>
+        <CY>0.3091</CY>
+        <NOTE>2A+Offset</NOTE>
+      </CXCY_RANGE_AREA>
+
+      <CXCY_RANGE_AREA>
+        <POINT>2</POINT>
+        <CX>0.3199</CX>
+        <CY>0.3224</CY>
+        <NOTE>2A+Offset</NOTE>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>3</POINT>
+        <CX>0.3206</CX>
+        <CY>0.304</CY>
+        <NOTE>2A+Offset</NOTE>
+      </CXCY_RANGE_AREA>
+      <CXCY_RANGE_AREA>
+        <POINT>4</POINT>
+        <CX>0.2951</CX>
+        <CY>0.290</CY>
+        <NOTE>2A+Offset</NOTE>
+      </CXCY_RANGE_AREA>
+      <INTENSITY_SL>2800</INTENSITY_SL>
+      <INTENSITY_SH>80000</INTENSITY_SH>
+      <DOMINANTWAVE_SL>0</DOMINANTWAVE_SL><DOMINANTWAVE_SH>0</DOMINANTWAVE_SH><VF_SL>0</VF_SL><VF_SH>0</VF_SH><NOTE>0</NOTE>
+    </BIN_RANGE>
+    </LED>
+    <LED>
+      <CODE>15701303</CODE>
+      <COLOR>AMBER</COLOR>
+      <RANGE_BRIGHTNESS>3</RANGE_BRIGHTNESS>
+      <BIN_RANGE>
+        <BIN_NAME>JZ3J3</BIN_NAME>
+        <HUE_SL>0</HUE_SL>
+        <HUE_SH>2</HUE_SH>
+        <SAT_SL>80</SAT_SL>
+        <SAT_SH>120</SAT_SH>
+        <ENABLE_CXCY>0</ENABLE_CXCY>
+        <CXCY_RANGE_AREA>
+          <POINT>1</POINT>
+          <CX>0.3002</CX>
+          <CY>0.2949</CY>
+          <NOTE/>
+        </CXCY_RANGE_AREA>
+        <CXCY_RANGE_AREA>
+          <POINT>2</POINT>
+          <CX>0.3083</CX>
+          <CY>0.3031</CY>
+          <NOTE/>
+        </CXCY_RANGE_AREA>
+        <CXCY_RANGE_AREA>
+          <POINT>3</POINT>
+          <CX>0.3083</CX>
+          <CY>0.2934</CY>
+          <NOTE/>
+        </CXCY_RANGE_AREA>
+        <CXCY_RANGE_AREA>
+          <POINT>4</POINT>
+          <CX>0.2951</CX>
+          <CY>0.290</CY>
+          <NOTE/>
+        </CXCY_RANGE_AREA>
+        <INTENSITY_SL>61</INTENSITY_SL>
+        <INTENSITY_SH>71</INTENSITY_SH>
+        <DOMINANTWAVE_SL>616</DOMINANTWAVE_SL>
+        <DOMINANTWAVE_SH>620</DOMINANTWAVE_SH>
+        <VF_SL>2</VF_SL>
+        <VF_SH>2.15</VF_SH>
+        <NOTE>0</NOTE>
+      </BIN_RANGE>
+      <BIN_RANGE>
+        <BIN_NAME>JZ2J3</BIN_NAME>
+        <HUE_SL>0</HUE_SL>
+        <HUE_SH>2</HUE_SH>
+        <SAT_SL>80</SAT_SL>
+        <SAT_SH>120</SAT_SH>
+        <ENABLE_CXCY>0</ENABLE_CXCY>
+        <CXCY_RANGE_AREA>
+          <POINT>1</POINT>
+          <CX>0.2951</CX>
+          <CY>0.3091</CY>
+          <NOTE>2A+Offset</NOTE>
+        </CXCY_RANGE_AREA>
+        <CXCY_RANGE_AREA>
+          <POINT>2</POINT>
+          <CX>0.3199</CX>
+          <CY>0.3224</CY>
+          <NOTE>2A+Offset</NOTE>
+        </CXCY_RANGE_AREA>
+        <CXCY_RANGE_AREA>
+          <POINT>3</POINT>
+          <CX>0.3206</CX>
+          <CY>0.304</CY>
+          <NOTE>2A+Offset</NOTE>
+        </CXCY_RANGE_AREA>
+        <CXCY_RANGE_AREA>
+          <POINT>4</POINT>
+          <CX>0.2951</CX>
+          <CY>0.290</CY>
+          <NOTE>2A+Offset</NOTE>
+        </CXCY_RANGE_AREA>
+        <INTENSITY_SL>61</INTENSITY_SL>
+        <INTENSITY_SH>71</INTENSITY_SH>
+        <DOMINANTWAVE_SL>612</DOMINANTWAVE_SL>
+        <DOMINANTWAVE_SH>616</DOMINANTWAVE_SH>
+        <VF_SL>2</VF_SL>
+        <VF_SH>2.15</VF_SH>
+        <NOTE>0</NOTE>
+      </BIN_RANGE>
+    </LED>
+    </LEDS>
+    <VERSIONIS>
+    <VERSIONI>
+    <ID>1</ID>
+    
+    
+    <DESCRIZIONE>CONTROL-TAIL-R</DESCRIZIONE>
+    <CODE_BITRON>30100646</CODE_BITRON>
+    <CODICE_CLIENTE>1234567890</CODICE_CLIENTE>
+    <CODICE_ECLIPSE>635</CODICE_ECLIPSE>
+    <BARCODE>89898</BARCODE>
+    
+
+
+
+    <SEQUENZA>1</SEQUENZA>
+
+ <SITES>
+    <SITE1 Enable="1" SITENO="1" FEASAAddr="0">
+    <FEASANAME Name="76L5">
+      <ID>1</ID>
+      <CH>1</CH>
+      <LEDNAME>DL18</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701307</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+      
+      
+      <HUE_OFFSET>0</HUE_OFFSET>
+      
+      <SAT_OFFSET>0</SAT_OFFSET>
+      
+       
+       
+       
+       
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>-2</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+      
+      <FEASANAME Name="76L5">
+      <ID>2</ID>
+      <CH>2</CH>
+      <LEDNAME>DL19</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701303</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+
+
+
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>2</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+      <FEASANAME Name="76L5">
+      <ID>3</ID>
+      <CH>3</CH>
+      <LEDNAME>DL20</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701307</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+
+
+
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>2</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>3</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+
+
+    </SITE1>
+    <SITE2 Enable="1" SITENO="2" FEASAAddr="1">
+    <FEASANAME Name="76L5">
+      <ID>1</ID>
+      <CH>4</CH>
+      <LEDNAME>DL18</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701307</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+
+
+
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>6</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+       <FEASANAME Name="76L5">
+      <ID>2</ID>
+      <CH>5</CH>
+      <LEDNAME>DL19</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701303</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+
+
+
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>3</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+       <FEASANAME Name="76L5">
+      <ID>3</ID>
+      <CH>6</CH>
+      <LEDNAME>DL20</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701307</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+
+
+
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>2</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+
+    </SITE2>
+    <SITE3 Enable="0" SITENO="3" FEASAAddr="0">
+    <FEASANAME Name="76L5">
+      <ID>1</ID>
+      <CH>7</CH>
+      <LEDNAME>DL18</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+      <FEASANAME Name="76L5">
+      <ID>2</ID>
+      <CH>8</CH>
+      <LEDNAME>DL19</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+      <FEASANAME Name="76L5">
+      <ID>3</ID>
+      <CH>9</CH>
+      <LEDNAME>DL20</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+    </SITE3>
+    <SITE4 Enable="0" SITENO="4" FEASAAddr="1">
+    <FEASANAME Name="76L3">
+      <ID>1</ID>
+      <CH>1</CH>
+      <LEDNAME>DL18</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+      <FEASANAME Name="76L3">
+      <ID>2</ID>
+      <CH>2</CH>
+      <LEDNAME>DL19</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+      <FEASANAME Name="76L3">
+      <ID>3</ID>
+      <CH>3</CH>
+      <LEDNAME>DL20</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+    </SITE4>
+    <SITE5 Enable="0" SITENO="5" FEASAAddr="1">
+    <FEASANAME Name="76L3">
+      <ID>1</ID>
+      <CH>4</CH>
+      <LEDNAME>DL18</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+      <FEASANAME Name="76L3">
+      <ID>2</ID>
+      <CH>5</CH>
+      <LEDNAME>DL19</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+      <FEASANAME Name="76L3">
+      <ID>3</ID>
+      <CH>6</CH>
+      <LEDNAME>DL20</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+    </SITE5>
+    <SITE6 Enable="0" SITENO="6" FEASAAddr="1">
+    <FEASANAME Name="76L3">
+      <ID>1</ID>
+      <CH>7</CH>
+      <LEDNAME>DL18</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+      <FEASANAME Name="76L3">
+      <ID>2</ID>
+      <CH>8</CH>
+      <LEDNAME>DL19</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+      <FEASANAME Name="76L3">
+      <ID>3</ID>
+      <CH>9</CH>
+      <LEDNAME>DL20</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+    </SITE6>
+</SITES>
+
+    </VERSIONI>
+    <VERSIONI>
+      <ID>1</ID>
+      <DESCRIZIONE>CONTROL-TAIL-R</DESCRIZIONE>
+      <CODE_BITRON>30281759</CODE_BITRON>
+      <CODICE_CLIENTE>1234567890</CODICE_CLIENTE>
+      <CODICE_ECLIPSE>635</CODICE_ECLIPSE>
+      <BARCODE>89898</BARCODE>
+      <SEQUENZA>1</SEQUENZA>
+
+       <SITES>
+    <SITE1 Enable="1" SITENO="1">
+    <FEASANAME Name="FEASA0">
+      <ID>1</ID>
+      <CH>1</CH>
+      <LEDNAME>DL7</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+
+
+
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+
+      <FEASANAME Name="FEASA0">
+      <ID>2</ID>
+      <CH>2</CH>
+      <LEDNAME>DL7</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+
+
+
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+    </SITE1>
+    <SITE2 Enable="1" SITENO="2">
+    <FEASANAME Name="FEASA0">
+      <ID>1</ID>
+      <CH>1</CH>
+      <LEDNAME>DL7</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+
+
+
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+      <FEASANAME Name="FEASA0">
+      <ID>1</ID>
+      <CH>1</CH>
+      <LEDNAME>DL7</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+
+
+
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>4</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+      <FEASANAME Name="FEASA0">
+      <ID>1</ID>
+      <CH>1</CH>
+      <LEDNAME>DL7</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+
+
+
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+    </SITE2>
+    <SITE3 Enable="1" SITENO="3">
+    <FEASANAME Name="FEASA0">
+      <ID>1</ID>
+      <CH>1</CH>
+      <LEDNAME>DL7</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+      <FEASANAME Name="FEASA0">
+      <ID>1</ID>
+      <CH>1</CH>
+      <LEDNAME>DL7</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+    </SITE3>
+    <SITE4 Enable="1" SITENO="4">
+    <FEASANAME Name="FEASA0">
+      <ID>1</ID>
+      <CH>1</CH>
+      <LEDNAME>DL7</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+      <FEASANAME Name="FEASA0">
+      <ID>1</ID>
+      <CH>1</CH>
+      <LEDNAME>DL7</LEDNAME>
+      <ENABLE>1</ENABLE>
+      <CODE>15701204</CODE>
+      <BINNAME>DA-1-K3</BINNAME>
+      <SITE>1</SITE>
+
+
+      <HUE_OFFSET>0</HUE_OFFSET>
+
+      <SAT_OFFSET>0</SAT_OFFSET>
+
+       <CX_OFFSET>0</CX_OFFSET><CY_OFFSET>0</CY_OFFSET>
+       <INTENSITY_OFFSET>0</INTENSITY_OFFSET>
+       <DOMINANTWAVE_OFFSET>0</DOMINANTWAVE_OFFSET>
+      <VF_REGISTER>1</VF_REGISTER><VF_OFFSET>0</VF_OFFSET>
+      <POWER_START>POWERON</POWER_START>
+      <POWER_END>POWERON</POWER_END>
+      <TON>1000</TON>
+      <NOTE>0</NOTE>
+      </FEASANAME>
+    </SITE4>
+</SITES>
+
+    </VERSIONI>
+    </VERSIONIS>
+</FUNZCONF>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

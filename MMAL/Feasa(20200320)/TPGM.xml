@@ -1,0 +1,51 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TPGM
+</name>
+</assembly>
+<members>
+<member name="M:TPGM.modTestplan.CheckBarcode(System.String@)">
+	<summary>
+ 获取并判断产品二维码
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TPGM.modTestplan.CheckVarient(System.String@)">
+	<summary>
+ 获取产品号
+ </summary>
+	<param name="ProgNo"></param>
+	<remarks></remarks>
+</member><member name="M:TPGM.modTestplan.CheckFeasa(System.Int32,System.Int32,System.String)">
+	<summary>
+ Feasa测试
+ </summary>
+	<param name="SiteNo"></param>
+	<param name="ProgNo"></param>
+	<remarks></remarks>
+</member><member name="M:TPGM.modTestplan.GetAllUsedFeasa(System.Int32,System.String)">
+	<summary>
+ Get all FeasaUse in test
+ </summary>
+	<param name="SiteNo"></param>
+	<param name="Code_Biton"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TPGM.modTestplan.GetUsedFeasaAddr(System.Collections.Generic.List{System.String})">
+	<summary>
+ In a site test condition, it should be same addr of Device Feasa
+ </summary>
+	<param name="FeasaUse"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TPGM.modTestplan.GetFeasaAddr(System.String)">
+	<summary>
+ 根据FeasaName（e.g 75L3）获取Com地址
+ </summary>
+	<param name="NodeFeasa"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

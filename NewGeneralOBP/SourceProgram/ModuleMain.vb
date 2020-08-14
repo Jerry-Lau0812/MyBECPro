@@ -1,0 +1,808 @@
+﻿Imports System.IO
+Imports System.IO.Ports
+Imports System.Threading
+Imports System.Text
+Imports System.Drawing
+
+Imports Bitron3DEQ.FVTRackBoardManager
+Imports Bitron3DEQ.FVTTestAssistant
+Imports Bitron3DEQ.BenchRunManager
+Imports Bitron3DEQ.Sherlock
+Imports BEC.Test.FCT.ResourceFileManager
+
+Module ModuleMain
+    Public SkipCheckCom As Boolean = False                'Only used for debug program when disconnect machine
+    Public SkipCameraInitial As Boolean = False
+    Public DebugProgam As Boolean = True              'Disabled/Enable Passwords input when change test mode
+    Public UseSql As Boolean = True
+
+#Region "Product Variant declare (Modify each parameter as need)"
+    'todo: Modify the correct UUTNum Here
+    Public UUTNum As Integer = 24         '>=1(0=N.A)
+    Public Const InterfaceNum As Integer = 0   '>=1(0=N.A)
+
+    Public IniUUT As Integer = 0
+    Public EndUUT As Integer = UUTNum - 1
+
+    Public FlashBinFile As String
+    Public FlashScriptFile As String
+    Public FlashBinFileCRC As String
+    Public FlashScriptFileCRC As String
+    Public FlashUsable As Boolean = False
+
+
+    Public Enum ProdInfos
+        'the following can not modify
+        ProdType
+        ProdDesc
+        CodeBitron
+        CodeClient
+        CodeSupplier
+        LabelColor
+    End Enum
+    Public Enum ProdOtherInfos
+        '****************************************************
+        'The folloing Enum item is used only in some special
+        'product,e.g. need use camera,need use interface...
+        '****************************************************
+        'UUT Numbers
+        UUTNum
+
+        'Flash 
+        FlashScript
+        FlashScriptEEPROM
+
+        FlashDesc
+        EEPROMDesc
+
+        C2000GangDeviceType
+        C2000GangTargetSite
+
+        'UUT position(Only for the machine that can check 2 kinds of PCB)
+        UUTPosition
+
+        'Barcode
+        BarcodeLength
+        BarcodeLength1
+        BarcodeLength2
+        BarcodeCase
+
+        'MTS Info
+        ProdCode
+        ECNCode
+
+        VerSW
+        VerHW
+
+        'Sherlock
+        SherlockUser
+        PakageNo
+        RelFW1
+        IniCameraPosition
+
+        SaveResultToSQL
+        BarcodeType
+
+    End Enum
+    Public Class CustomerParameters
+        Public AA As String
+    End Class
+
+    Private Sub CopyDLLToSysdirectory()
+        'todo: put the correct DLL that need copy to system32 here
+        Call CopyDLLToSys("FR_COMM.dll")
+    End Sub
+    Private Sub LoadCustomerParameter()
+        'todo:Load customer parameters and put into myTAT.sysinfo structure
+        'MyCusPars.AA = MyTAT.SysSettings.CustormerParas(0).Value
+
+    End Sub
+#End Region
+
+#Region "Machine Control variant declare (Don't modify)"
+    Private M As Mutex
+    Public IncFailCount(UUTNum - 1) As Boolean
+    Public RetryTest(UUTNum - 1) As Integer
+    Public BeforePass(UUTNum - 1) As Boolean
+    Public NowPass(UUTNum - 1) As Boolean
+    Public TmpEsito(UUTNum - 1) As Boolean
+    'Public TestStepInfos(UUTNum - 1) As List(Of TestStepInformation)
+    Public TestStepInfos(UUTNum - 1)() As TestStepInformation
+
+    Public MyTest As New ClassTest
+    Public MyBench As New BenchRunManager
+    Public MyTAT As New ClassTestAssistant
+    Public MySherLock As New SherlockProject
+    Public MyRack As New RackSystem
+    Public MyInterface(InterfaceNum) As ClassInterface
+    Public MyCusPars As New CustomerParameters
+    Public MyMemSQL As ClassSQL
+    Public MyResManager As New ResFileManager
+    Public MyDataTracer As New Bitron.DataTracer.DataTraceHelper(Bitron.DataTracer.PlantLocations.China)
+
+    Public MyTestRecords As TestRecords.RecordsSQL
+
+    Public MachineState As MachineStates = MachineStates.Free
+    Public RunState As RunStates
+    Public TestMode As TestModes = TestModes.Product
+    Public TestStep As TestItemsInfo
+    Public CurrentStepNo As TestStepNo
+    Public AutoEndTest As Boolean
+    Public AbortTest As Boolean
+    Public DispTime As Single
+
+    Public Fr2 As New FlashInterface
+
+    Public Class DatiProdInformation
+        Private DicAllItems As New Dictionary(Of Integer, String)
+        Private DicDisped As New Dictionary(Of Integer, Boolean)
+
+        Public Sub New()
+            For Each item As ProdInfos In [Enum].GetValues(GetType(ProdInfos))
+                DicDisped.Add(item, True)
+                DicAllItems.Add(item, "")
+            Next
+
+            For Each item As ProdOtherInfos In [Enum].GetValues(GetType(ProdOtherInfos))
+                Dim LastIndex As Integer = GetCommonInfoCount()
+                DicDisped.Add(LastIndex + item, True)
+                DicAllItems.Add(LastIndex + item, "")
+            Next
+
+            'Set Not displayed Item
+            Call SetNotDispedItem(ProdOtherInfos.BarcodeLength)
+            Call SetNotDispedItem(ProdInfos.LabelColor)
+        End Sub
+
+        Public Sub SetItemValue(ByVal Itemkey As ProdInfos, ByVal Value As String)
+            DicAllItems.Item(Itemkey) = Value
+        End Sub
+
+        Public Sub SetItemValue(ByVal Itemkey As ProdOtherInfos, ByVal Value As String)
+            Dim LastIndex As Integer = GetCommonInfoCount()
+            DicAllItems.Item(LastIndex + Itemkey) = Value
+        End Sub
+
+        Private Sub SetNotDispedItem(ByVal Item As ProdInfos)
+            DicDisped.Item(Item) = False
+        End Sub
+
+        Private Sub SetNotDispedItem(ByVal Item As ProdOtherInfos)
+            Dim LastIndex As Integer = GetCommonInfoCount()
+            DicDisped.Item(LastIndex + Item) = False
+        End Sub
+
+        Public Function GetDispedtemState(ByVal Item As ProdInfos) As Boolean
+            Return DicDisped(Item)
+        End Function
+
+        Public Function GetDispedtemState(ByVal Item As ProdOtherInfos) As Boolean
+            Dim LastIndex As Integer = GetCommonInfoCount()
+            If DicAllItems(LastIndex + Item) <> "" Then
+                Return DicDisped(LastIndex + Item).ToString
+            Else
+                Return False
+            End If
+        End Function
+
+        Public Function Value(ByVal Item As ProdInfos) As String
+            Return DicAllItems.Item(Item)
+        End Function
+
+        Public Function Value(ByVal Item As ProdOtherInfos) As String
+            Dim LastIndex As Integer = GetCommonInfoCount()
+            Return DicAllItems.Item(LastIndex + Item)
+        End Function
+
+        Private Function GetCommonInfoCount() As Integer
+            Dim LastIndex As Integer = [Enum].GetValues(GetType(ProdInfos)).Length
+            Return LastIndex
+        End Function
+
+    End Class
+    Public DatiProd As New DatiProdInformation
+    Public Esito(UUTNum - 1) As Boolean 'TestResult for each UUT
+#End Region
+
+#Region "Start application"
+    Public Sub Main()
+        Try
+            Application.EnableVisualStyles() 'Enable Windows XP Visual Styles
+            Call Avvio()
+            Call CopyDLLToSysdirectory()
+            MyRack.XMLConfiguePath = Application.StartupPath & "\SysFile\HWConfigure.xml"
+            MyTAT.XMLSettingFile = Application.StartupPath & "\SysFile\FunzConf.xml"
+
+            Call StartFVT()
+
+        Catch ex As Exception
+        End Try
+        Application.Run(Frmpannello)
+        End
+    End Sub
+    Public Sub StartFVT()
+        '*************************************************
+        'Load all parameters information and             *
+        'try to check communication with Com             *
+        'Nothing need modify here when make new Program  *
+        '*************************************************
+        MachineState = MachineStates.Fault
+        MyTAT.ScanFiches.Close()
+
+        Try
+            If UseSql Then
+                If Not MyMemSQL Is Nothing Then MyMemSQL.Dispose()
+                MyMemSQL = New ClassSQL
+            End If
+
+            If Not SkipCheckCom Then       'Not skip verify RS232 communication
+                Call InitialSelfClass()    'Initial SelfDefine class
+                If MyRack.InitialRackSystem Then
+                    MachineState = MachineStates.Ready
+                End If
+            Else
+                MachineState = MachineStates.Ready
+            End If
+
+            'Load All test information when machine is ready
+            If MachineState = MachineStates.Ready Then Call GetAllInfos()
+
+            '================================================
+            'Verify Camera
+            '================================================
+            If MachineState = MachineStates.Ready Then
+                If Not SkipCameraInitial Then
+                    If MyTAT.Sysinfo.Sherlock.CameraNum > 0 Then
+                        MySherLock.CloseCamera()
+                        If MySherLock.InitialCamera <> SherlockProject.Results.E_OK Then
+                            MachineState = MachineStates.Fail
+                            MySherLock.CloseCamera()
+                            MsgBox("Initial Sherlock Project Fail!" & vbNewLine & MySherLock.ErrorMessage, MsgBoxStyle.Critical)
+                        End If
+                    End If
+                End If
+            End If
+
+        Catch ex As Exception
+            Call AbortInitialApplication(ex)
+        Finally
+            Call LoadResourceFile()
+            Call SwitchLanguages()
+        End Try
+
+
+
+
+    End Sub
+#End Region
+
+#Region "Used for control by FVTRacksystem.dll"
+    Private Sub InitialSelfClass()
+        If InterfaceNum > 0 Then
+            For t As Integer = 0 To InterfaceNum - 1
+                If MyInterface(t) Is Nothing Then
+                    MyInterface(t) = New ClassInterface(t)
+                Else
+                    MyInterface(t).CloseCom()
+                End If
+            Next
+            With RackSystem.Device_Interface
+                .DelegateOpenCom = AddressOf OpenComInterface
+                .DelegateCloseCom = AddressOf CloseComInterface
+                .DelegateVerCom = AddressOf VerComInterface
+                .DelegateTrigCom = AddressOf TrigComInterface
+            End With
+        End If
+    End Sub
+    Public Function OpenComInterface(ByVal e As Driver.PortEventArgs) As Boolean
+        Dim Result As Boolean = MyInterface(e.Index).OpenCom()
+        Return Result
+    End Function
+    Public Function CloseComInterface(ByVal e As Driver.PortEventArgs) As Boolean
+        If e.Index < InterfaceNum Then
+            Dim Result As Boolean = MyInterface(e.Index).CloseCom()
+            Return Result
+        End If
+    End Function
+    Public Function VerComInterface(ByVal e As Driver.PortEventArgs) As Boolean
+        Dim Result As Boolean = MyInterface(e.Index).VerCom(e)
+        Return Result
+    End Function
+    Public Function TrigComInterface(ByVal e As Driver.PortEventArgs) As Boolean
+        Dim Result As Boolean = MyInterface(e.Index).TrigCom(e)
+        Return Result
+    End Function
+#End Region
+
+#Region "Initial Machine part"
+    Private Sub Avvio()
+        '********************************************
+        '* Only allow one program ruuning each time * 
+        '********************************************
+        Dim first As Boolean
+        M = New Threading.Mutex(True, Application.ProductName, first)
+        If (first) Then
+            M.ReleaseMutex()
+        Else
+            MessageBox.Show("Program is running now!", "Waring", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Frmpannello.Close()
+            End
+        End If
+    End Sub
+    Private Sub AbortInitialApplication(ByVal ex As Exception)
+        '********************************************
+        'Error occured ,abort start progress
+        '********************************************
+        MessageBox.Show("Initial machine Fail!" & vbNewLine & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        MachineState = MachineStates.Fault
+    End Sub
+    Private Sub GetAllInfos()
+        Call LoadSystemParameters()
+        Call LoadCustomerParameter()
+        Call SetProdVersionInfo()
+        Call SetReportInfos()
+        Call SetSherlockParameter()         'Verify Sherlock Image path
+        Call SetFailTubeParameter()
+        Call SetDataTracer()
+    End Sub
+    Private Sub LoadSystemParameters()
+        'Specify the method to check Fiches format
+        ClassScanFiches.CheckFichesEvent = AddressOf MyTest.VerifyFichesFormat
+
+        'Initial Testassistant
+        MyTAT.Initial()
+
+        'Initial Bench proudct manager
+        Call MyBench.InitialBench(MyTAT.SysSettings.Sysparas.BenchXMLPath, MyTAT.Sysinfo.System.BitronCode, True, MyTAT.SysSettings.Sysparas.Supervisual.SQLServer)
+
+        'Set TestStep list
+        TestStep = New TestItemsInfo(MyBench.StepList)
+        Frmpannello.ProBarTest.Maximum = TestStep.TotalStepNum
+
+    End Sub
+    Public Sub SetProdVersionInfo()
+        '**************************************
+        'Get product version information from 
+        'Prod_Products
+        '**************************************
+        Dim VersionDic As New Dictionary(Of String, String)
+        VersionDic = MyBench.Parameters
+        Dim SelItemValue As String
+        For Each Item In [Enum].GetValues(GetType(ProdInfos))
+            Try
+                SelItemValue = VersionDic.Item(Item.ToString)
+                Call DatiProd.SetItemValue(Item, SelItemValue)
+            Catch ex As Exception
+                Throw New Exception("Not Found Product Version Item '" & Item.ToString & "'!")
+            End Try
+        Next
+
+        For Each Item In [Enum].GetValues(GetType(ProdOtherInfos))
+            Try
+                SelItemValue = VersionDic.Item(Item.ToString)
+                Call DatiProd.SetItemValue(Item, SelItemValue)
+            Catch ex As Exception
+            End Try
+        Next
+
+        VersionDic = Nothing
+    End Sub
+    Public Sub SetReportInfos()
+        'Initial Reprot
+        MyTAT.InitialStatisticDB(DatiProd.Value(ProdInfos.ProdDesc))   'Verify report path 
+
+        ''Update ErrorCode to Database
+        'Dim DicSteps As New Dictionary(Of String, String)
+        'For Each item In MyBench.TestSteps
+        '    DicSteps.Add(item.TestID, item.Remark)
+        'Next
+        ''MyTAT.UpdateErrorCode(DicSteps)
+
+        'Used for generate MTS report Only
+        With MyTAT.ScanFiches
+            With .MTSReport.LblInfo
+                .SupplyCode = DatiProd.Value(ProdInfos.CodeSupplier)
+                .ECNCode = DatiProd.Value(ProdOtherInfos.ECNCode)
+                .ProdCode = DatiProd.Value(ProdOtherInfos.ProdCode)
+                .ClientCode = DatiProd.Value(ProdInfos.CodeClient)
+            End With
+        End With
+
+    End Sub
+    Private Sub SetSherlockParameter()
+        If MyTAT.Sysinfo.Sherlock.CameraNum = 0 Then Exit Sub
+
+        'Transfer to Sherlock Project
+        SherlockProject.SaveAllImage = IIf(MyTAT.Sysinfo.Sherlock.SaveAllImg = "1", True, False)
+        SherlockProject.SaveFailImage = IIf(MyTAT.Sysinfo.Sherlock.SaveFailImg = "1", True, False)
+        SherlockProject.SaveTmpImage = IIf(MyTAT.Sysinfo.Sherlock.SaveTmpImg = "1", True, False)
+        SherlockProject.ThresholdRange = MyTAT.Sysinfo.Sherlock.ThresHoldRange
+        SherlockProject.AutoAdjustOrder = SherlockProject.AdjustOreder.IncToDec
+        SherlockProject.CameraNum = MyTAT.Sysinfo.Sherlock.CameraNum
+
+        SherlockProject.AllOutputImagePath = MyTAT.Sysinfo.Sherlock.AllImgPath & DatiProd.Value(ProdInfos.CodeBitron) & "\"
+        SherlockProject.FailOutputImagePath = MyTAT.Sysinfo.Sherlock.FailImgPath & DatiProd.Value(ProdInfos.CodeBitron) & "\"
+        SherlockProject.TempOutputImagePath = MyTAT.Sysinfo.Sherlock.TempImgPath
+        SherlockProject.XMLConfigePath = MyTAT.Sysinfo.Sherlock.ConfigePath
+        SherlockProject.ProjectPath = MyTAT.Sysinfo.Sherlock.ProjectPath
+        SherlockProject.XMLReportPath = MyTAT.Sysinfo.Sherlock.ReportPath
+
+        'Auto Copy Ueye USB camera settings file to sherlock setup path
+        If MyTAT.Sysinfo.Sherlock.UseUeye = "1" Then
+            Dim AutoCopyPath As String = CutPath(1, MyTAT.Sysinfo.Sherlock.ConfigePath)
+            System.Diagnostics.Process.Start(AutoCopyPath & "CameraParameter\AutoCopyCameraIni.exe")
+        End If
+
+        SherlockProject.ProductType = DatiProd.Value(ProdInfos.ProdType)
+        If DatiProd.Value(ProdOtherInfos.SherlockUser) <> "" Then
+            SherlockProject.ConfigeUser = DatiProd.Value(ProdOtherInfos.SherlockUser)
+        Else
+            SherlockProject.ConfigeUser = DatiProd.Value(ProdInfos.CodeBitron)
+        End If
+    End Sub
+    Private Sub SetFailTubeParameter()
+        With MyTAT.SysSettings.ProdHistory
+            .LockTubeDel = AddressOf MyTest.LockTube
+            .UnLockTubeDel = AddressOf MyTest.UnLockTube
+            .ReadFailCodeDel = AddressOf MyTest.ReadFailBarCode
+            .PCBReceiveDelegate = AddressOf MyTest.WaitPCBArrived
+        End With
+    End Sub
+    Private Sub SetDataTracer()
+        MyDataTracer.SkipSpy = Not MyTAT.SysSettings.Sysparas.Supervisual.Use
+        If MyDataTracer.Inital(MyTAT.Sysinfo.System.Supervisual.BenchSN) = False Then
+            Throw New Exception("Data Tracer initial failed!")
+        End If
+    End Sub
+
+#End Region
+
+#Region "Display information part"
+    ''' <summary>
+    ''' 增加Pass或Fail数量
+    ''' </summary>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
+    Public Function IncPassFail() As String
+        '********************************************
+        'Increase Pass Fail Number
+        '********************************************
+        Dim es As String = ""
+        If AbortTest Then
+            For t As Integer = 0 To UUTNum - 1
+                If t >= IniUUT And t <= EndUUT Then
+                    Call DispMachineState(t + 1, MachineStates.Test_Aborted) 'Display Test result as Aborted
+                    es = es & "0"
+                End If
+            Next
+            Return es
+        End If
+
+        For t As Integer = 0 To UUTNum - 1
+            If t >= IniUUT And t <= EndUUT Then
+                If Esito(t) Then
+                    Call DispMachineState(t + 1, MachineStates.Pass) 'Display Test result as pass
+                    MyTAT.Sysinfo.PassNum += 1                             'Increase Pass test number
+                    es = es & "1"                                    'Stamp Flag
+                Else
+                    Call DispMachineState(t + 1, MachineStates.Fail) 'Display Test result as fail
+                    If IncFailCount(t) Then MyTAT.Sysinfo.FailNum += 1 'Increase Fail test number
+                    es = es & "0"                                    'Fail LED ON flag
+                End If
+                MyTAT.Sysinfo.Amount += 1    'Increase Total test number
+            End If
+        Next
+        Call UpdatePassFail()         'Store Pass fail Number to Database
+
+
+        If InStr(es, "0") > 0 Then 'Display Fail form
+            MyTAT.ShowFailForm(MyResManager.GetValue("Err_FailUnblock"))
+        End If
+
+        Return es
+    End Function
+    ''' <summary>
+    ''' 重置测试数量
+    ''' </summary>
+    ''' <remarks></remarks>
+    Public Sub ResetPassFail()
+        '********************************
+        'Reset Pass Fail Number
+        '********************************
+        MyTAT.Sysinfo.PassNum = 0
+        MyTAT.Sysinfo.FailNum = 0
+        Call UpdatePassFail()
+    End Sub
+    ''' <summary>
+    ''' 保存当前Pass及Fail数量
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub UpdatePassFail()
+        '*********************************************************
+        'Save current product's pass,Fail,amount Qty to database
+        '*********************************************************
+        If AbortTest Or MyTAT.Sysinfo.ProdMode = TestModes.Debug Then Exit Sub
+        Call MyTAT.SysSettings.ProdHistory.UpdateHistory(MyTAT.Sysinfo.System.BitronCode, MyTAT.Sysinfo.PassNum, MyTAT.Sysinfo.FailNum, MyTAT.Sysinfo.Amount, MyTAT.Sysinfo.ProdMode)
+        Call MyDataTracer.UpdateMachineState(DatiProd.Value(ProdInfos.CodeBitron), DatiProd.Value(ProdInfos.ProdDesc), MyTAT.Sysinfo.PassNum, MyTAT.Sysinfo.FailNum, MyTAT.Sysinfo.ProdMode)
+    End Sub
+
+    ''' <summary>
+    ''' 显示当前测试状态
+    ''' </summary>
+    ''' <param name="UUTNo"></param>
+    ''' <param name="State"></param>
+    ''' <remarks></remarks>
+    Public Sub DispMachineState(ByVal UUTNo As Integer, ByVal State As MachineStates)
+        '***********************************************************
+        'Display machine state by using diffirent string and backcolor
+        'UUTNO: the UUT to display
+        'State: Machine state
+        '***********************************************************
+        Dim DispState As String = [Enum].GetName(GetType(MachineStates), State)
+        Dim DispColor As Color = MyTAT.GetStateColor(State)
+        'For t As Integer = IniUUT To EndUUT
+        Frmpannello.CtrlConcise.SetStauts(DispState, DispColor, UUTNo - 1)
+        'Next
+
+        With Frmpannello.LayoutUUTInfo
+            For Each lbl As Label In .Controls
+                If lbl.Name = "LblState" & UUTNo Then
+                    lbl.Text = MyResManager.GetValue("Info_" & DispState)
+                    lbl.BackColor = DispColor
+                    Exit For
+                End If
+            Next
+        End With
+        Application.DoEvents()
+    End Sub
+    Public Sub DispMachineState()
+        Call DispMachineState(MachineState)
+    End Sub
+
+    Public Sub DispMachineState(MachState As MachineStates, Optional CheckUUT As Boolean = True)
+
+        Dim DispState As String = [Enum].GetName(GetType(MachineStates), MachState)
+        Dim DispColor As Color = MyTAT.GetStateColor(MachState)
+        'Dim DispState As String = [Enum].GetName(GetType(MachineStates), MachineState)
+        'Dim DispColor As Color = MyTAT.GetStateColor(MachineState)
+
+        Dim LblIndex As Integer
+
+        For t As Integer = IniUUT To EndUUT
+            Frmpannello.CtrlConcise.SetStauts(DispState, DispColor, t)
+        Next
+        Call Frmpannello.SetDispMsgConcise(DispState, DispColor)
+
+        With Frmpannello.LayoutUUTInfo
+            For t As Integer = IniUUT To EndUUT
+                For Each lbl As Label In .Controls
+                    If Left(lbl.Name, 8).ToUpper = "LBLSTATE" Then
+                        LblIndex = CInt(lbl.Name.Substring(8)) - 1
+
+                        If LblIndex = t Then
+                            If LblIndex >= IniUUT And LblIndex <= EndUUT Then
+                                lbl.Text = MyResManager.GetValue("Info_" & DispState)
+                                lbl.BackColor = DispColor
+                            Else
+                                lbl.Text = MyResManager.GetValue("Info_Free")
+                                lbl.BackColor = MyTAT.GetStateColor(MachineStates.Free)
+                            End If
+                            Exit For
+                        End If
+
+
+                    End If
+                Next
+            Next
+
+        End With
+
+        Application.DoEvents()
+    End Sub
+    Public Sub DispMachineStateInit()
+
+        Dim DispState As String = [Enum].GetName(GetType(MachineStates), MachineState)
+        Dim DispColor As Color = MyTAT.GetStateColor(MachineState)
+
+        Dim LblIndex As Integer
+
+        For t As Integer = IniUUT To EndUUT
+            Frmpannello.CtrlConcise.SetStauts(DispState, DispColor, t)
+        Next
+        Call Frmpannello.SetDispMsgConcise(DispState, DispColor)
+
+        With Frmpannello.LayoutUUTInfo
+            For t As Integer = IniUUT To EndUUT
+                For Each lbl As Label In .Controls
+                    If Left(lbl.Name, 8).ToUpper = "LBLSTATE" Then
+                        LblIndex = CInt(lbl.Name.Substring(8)) - 1
+
+                        If LblIndex >= IniUUT And LblIndex <= EndUUT Then
+                            lbl.Text = MyResManager.GetValue("Info_" & DispState)
+                            lbl.BackColor = DispColor
+                        Else
+                            lbl.Text = MyResManager.GetValue("Info_Free")
+                            lbl.BackColor = MyTAT.GetStateColor(MachineStates.Free)
+                        End If
+
+                    End If
+                Next
+            Next
+
+        End With
+
+        Application.DoEvents()
+    End Sub
+
+
+    Private Sub LoadResourceFile()
+        MyResManager.Initial(My.Application.Info.DirectoryPath & "\sysfile\Resource\")
+        MyResManager.SelectLanguage(MyTAT.SysSettings.Sysparas.Project.Language)
+    End Sub
+    Public Sub SwitchLanguages()
+        With Frmpannello
+            'Menu
+            For Each item As ToolStripMenuItem In .MenuStrip.Items
+                item.Text = MyResManager.GetValue(item.Name)
+                For Each Child In item.DropDownItems
+                    If Child.GetType.Name = "ToolStripMenuItem" Then
+                        Dim ChildItem As ToolStripMenuItem = CType(Child, ToolStripMenuItem)
+                        ChildItem.Text = MyResManager.GetValue(ChildItem.Name)
+
+                        If ChildItem.HasDropDownItems Then
+                            If ChildItem.Name <> "MenuLanguages" Then
+                                For Each subChild In ChildItem.DropDownItems
+                                    Dim ChildItem1 As ToolStripMenuItem = CType(subChild, ToolStripMenuItem)
+                                    ChildItem1.Text = MyResManager.GetValue(ChildItem1.Name)
+                                Next
+                            Else
+                                ChildItem.Text = "Languages"
+                            End If
+                        End If
+                    End If
+                Next
+            Next
+
+            'Toolbar
+            Call SetToolBar(.ToolStripQuit)
+            Call SetToolBar(.ToolStripDebug)
+            Call SetToolBar(.ToolStripProgram)
+            Call SetToolBar(.ToolStripTestMode)
+            Call SetToolBar(.ToolStripSelStep)
+            Call SetToolBar(.ToolStripDebug)
+            For Each item In .ToolStripSelect.Items
+                If item.GetType.Name = "ToolStripButton" Then
+                    Dim But As ToolStripButton = CType(item, ToolStripButton)
+                    But.ToolTipText = MyResManager.GetValue(But.Name)
+                ElseIf item.GetType.Name = "ToolStripSplitButton" Then
+                    Dim But As ToolStripSplitButton = CType(item, ToolStripSplitButton)
+                    But.ToolTipText = MyResManager.GetValue(But.Name)
+                    For Each child As ToolStripMenuItem In But.DropDownItems
+                        child.Text = MyResManager.GetValue(child.Name)
+                    Next
+                End If
+            Next
+            Call SetToolBar(.ToolStrip_RemoteDebug)
+
+            'Button
+            .ButSelProd.Text = MyResManager.GetValue(.ButSelProd.Name)
+            For Each item As TabPage In .tabLeftTop.TabPages
+                item.Text = MyResManager.GetValue(item.Name)
+            Next
+
+            For Each item In .tableLayoutPanel5.Controls
+                If item.GetType.Name = "Label" Then
+                    Dim Lbl As Label = CType(item, Label)
+                    Lbl.Text = MyResManager.GetValue(Lbl.Name)
+                End If
+            Next
+
+            .LblTipTestMode.Text = MyResManager.GetValue(.LblTipTestMode.Name)
+            For Each item In .tableLayoutPanel6.Controls
+                If item.GetType.Name = "RadioButton" Then
+                    Dim Lbl As RadioButton = CType(item, RadioButton)
+                    Lbl.Text = MyResManager.GetValue(Lbl.Name)
+                End If
+            Next
+
+            For Each item As TabPage In .tabLeftBottom.TabPages
+                item.Text = MyResManager.GetValue(item.Name)
+            Next
+            For Each item As Button In .TabPageCmd.Controls
+                item.Text = MyResManager.GetValue(item.Name)
+            Next
+            .TabPageDispPicture.Text = MyResManager.GetValue(.TabPageDispPicture.Name)
+            .TabPageDispTable.Text = MyResManager.GetValue(.TabPageDispTable.Name)
+
+            .DGVTestItem.Columns(4).HeaderText = MyResManager.GetValue("TabStep_ColItem")
+            .DGVTestItem.Columns(5).HeaderText = MyResManager.GetValue("TabStep_ColMin")
+            .DGVTestItem.Columns(6).HeaderText = MyResManager.GetValue("TabStep_ColNormal")
+            .DGVTestItem.Columns(7).HeaderText = MyResManager.GetValue("TabStep_ColMax")
+            .DGVTestItem.Columns(8).HeaderText = MyResManager.GetValue("TabStep_ColUnit")
+
+
+            .LblFVT.Text = MyResManager.GetValue(.LblFVT.Name)
+
+        End With
+
+    End Sub
+    Public Sub TranslateTestItems()
+        'TestStep
+        Dim StrNo As String = ""
+        Dim StrDes As String = ""
+        For Each row As DataGridViewRow In Frmpannello.DGVTestItem.Rows
+            StrNo = "Step" & row.Cells(3).Value
+            StrDes = MyResManager.GetValue(StrNo)
+            If StrDes.Trim <> "" Then row.Cells(4).Value = StrDes
+        Next
+    End Sub
+    Private Sub SetToolBar(ByVal ToolBar As ToolStrip)
+        For Each item In ToolBar.Items
+            If item.GetType.Name = "ToolStripButton" Then
+                Dim But As ToolStripButton = CType(item, ToolStripButton)
+                But.ToolTipText = MyResManager.GetValue(But.Name)
+            End If
+        Next
+    End Sub
+#End Region
+
+#Region "Other common used function"
+    Public Sub Sleep(ByVal Ms As Integer)
+        '**********************************
+        'Suspend thread microseconds
+        '**********************************
+        System.Threading.Thread.Sleep(Ms)
+    End Sub
+    Public Function GetCommand(ByVal UUTNo As Integer, ByVal BitValue As Integer) As String
+        '***********************************
+        'Return Binary command e.g."0100"
+        'UUTNO from 0 to UUTNum-1
+        '***********************************
+        Dim RetValue As String = ""
+
+        For t As Integer = 0 To UUTNum - 1
+            If t = UUTNo Then
+                RetValue &= BitValue
+            Else
+                RetValue &= "0"
+            End If
+        Next
+        Return RetValue
+    End Function
+    Public Sub AppendSolidus(ByRef FilePath As String)
+        If Right(FilePath, 1) <> "\" Then
+            FilePath &= "\"
+        End If
+    End Sub
+    Public Function CutPath(ByVal Level As Integer, ByVal Path As String, Optional ByVal RetLeave As Boolean = False) As String
+        '**********************************
+        'Level=0 is ...\bin\debug\ path
+        'level=1 is ...\bin\debug  path
+        '....
+        '**********************************
+        Dim FullPaths() As String = Path.Split("\")
+        Dim FullLevel As Integer = FullPaths.Length
+        Dim DesPath As String = ""
+
+        If Level > FullLevel Then Level = FullLevel
+        If RetLeave Then
+            DesPath = FullPaths(FullPaths.Length - 1 - Level)
+        Else
+            For t As Integer = 0 To FullPaths.Length - 1 - Level
+                DesPath &= FullPaths(t) & "\"
+            Next
+        End If
+
+        Return DesPath
+    End Function
+    Private Sub CopyDLLToSys(ByVal FileName As String)
+        Dim SrcPath As String = My.Application.Info.DirectoryPath & "\SysFile\Dll\" & FileName
+        Dim DesPath As String = System.Environment.SystemDirectory & "\" & FileName
+
+        If File.Exists(DesPath) = False Then
+            FileCopy(SrcPath, DesPath)
+        End If
+    End Sub
+#End Region
+
+End Module

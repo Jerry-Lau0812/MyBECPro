@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6A8F91C-6FDD-4B58-8396-CE73E48EDC5E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>Model_FVT</RootNamespace>
+    <AssemblyName>Model_FVT</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>Computer.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <ManifestCertificateThumbprint>EF7D915AF3A0D921D7485A75139B0C88D9CE8BFD</ManifestCertificateThumbprint>
+    <ManifestKeyFile>JANUS 2 HMI_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Model_FVT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Model_FVT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BenchProductManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SysFile\Dll\BenchProductManager.dll</HintPath>
+    </Reference>
+    <Reference Include="BenchRunManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SysFile\Dll\BenchRunManager.dll</HintPath>
+    </Reference>
+    <Reference Include="BitronDefinedClass, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SysFile\Dll\BitronDefinedClass.dll</HintPath>
+    </Reference>
+    <Reference Include="BitronSherlock, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SysFile\Dll\BitronSherlock.dll</HintPath>
+    </Reference>
+    <Reference Include="BitronTestAssistant, Version=1.0.0.34, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SysFile\Dll\BitronTestAssistant.dll</HintPath>
+    </Reference>
+    <Reference Include="DataTracer">
+      <HintPath>bin\Debug\SysFile\Dll\DataTracer.dll</HintPath>
+    </Reference>
+    <Reference Include="FVTRackBoardManager, Version=2.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SysFile\Dll\FVTRackBoardManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Access, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="ResourceFileManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SysFile\Dll\ResourceFileManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Testbench, Version=3.2.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SysFile\Dll\Testbench.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassInterface.vb" />
+    <Compile Include="ClassSQL.vb" />
+    <Compile Include="ClassTest.vb" />
+    <Compile Include="FrmDiagMachine.Designer.vb">
+      <DependentUpon>FrmDiagMachine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDiagMachine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmpannello.Designer.vb">
+      <DependentUpon>Frmpannello.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frmpannello.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FVTResource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FVTResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleMain.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmDiagMachine.resx">
+      <DependentUpon>FrmDiagMachine.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmpannello.resx">
+      <DependentUpon>Frmpannello.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FVTResource.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FVTResource.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="bin\Debug\SysFile\Image\BackGround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\SysFile\Image\TitleTop.jpg" />
+    <None Include="bin\Debug\SysFile\Image\Button\Unload.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\Add.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\Break.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\Config.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\Debug.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\Delete.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\First.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\Last.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\Load.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\MoveBack.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\MoveNext.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\Pause.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\Product.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\Reset.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\Run.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\Select.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\Skip.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\Stop.gif" />
+    <None Include="bin\Debug\SysFile\Image\Barcode.jpg" />
+    <None Include="bin\Debug\SysFile\Image\bitron.gif" />
+    <None Include="bin\Debug\SysFile\Image\Initial.jpg" />
+    <None Include="bin\Debug\SysFile\Image\TitleBottom.jpg" />
+    <None Include="bin\Debug\SysFile\Image\Button\Select.jpg" />
+    <None Include="bin\Debug\SysFile\Image\Button\Statistic.jpg" />
+    <None Include="bin\Debug\SysFile\Image\Button\About.jpg" />
+    <None Include="bin\Debug\SysFile\Image\Button\Help.jpg" />
+    <None Include="bin\Debug\SysFile\Image\Button\Lock.jpg" />
+    <None Include="bin\Debug\SysFile\Image\Button\LED_Blue.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\SW_Green.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\SW_Red.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\SW_Yellow.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\Find.jpg" />
+    <None Include="bin\Debug\SysFile\Image\Button\SW_Close.jpg" />
+    <None Include="bin\Debug\SysFile\Image\Button\SW_Open.jpg" />
+    <None Include="bin\Debug\SysFile\Image\Button\SW_CloseErr.jpg" />
+    <None Include="bin\Debug\SysFile\Image\Button\Close.bmp" />
+    <None Include="bin\Debug\SysFile\Image\Button\LEDYellow.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\LEDGray.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\LEDGreeN.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\LEDRed.gif" />
+    <None Include="bin\Debug\SysFile\Image\Button\arrow_down.png" />
+    <None Include="bin\Debug\SysFile\Image\Button\arrow_right.png" />
+    <None Include="bin\Debug\SysFile\Image\Button\arrow_up.png" />
+    <None Include="bin\Debug\SysFile\Image\Button\arrow_out.png" />
+    <None Include="My Project\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\SysFile\Image\Button\lightning_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\SysFile\Image\Button\lightning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\SysFile\Image\Button\action_log.png" />
+    <None Include="bin\Debug\SysFile\Image\Button\Flag_China.jpg" />
+    <None Include="bin\Debug\SysFile\Image\Button\Flag_Italy.JPG" />
+    <None Include="bin\Debug\SysFile\Image\Button\Flag_Poland.JPG" />
+    <None Include="bin\Debug\SysFile\Image\Button\Flag_Turky.JPG" />
+    <None Include="bin\Debug\SysFile\Image\Button\Flag_USA.JPG" />
+    <Content Include="Computer.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

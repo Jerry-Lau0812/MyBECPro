@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HISTORY>
+  <PARAS>
+    <BITRONCODE>29901382</BITRONCODE>
+    <OPRATOR>aaa</OPRATOR>
+  </PARAS>
+  <PRODUCTS>
+    <PRODUCT id="1">
+      <CODE>29901382</CODE>
+      <PASS>0</PASS>
+      <FAIL>0</FAIL>
+      <AMOUNT>880</AMOUNT>
+      <MODE>1</MODE>
+      <FailCodes />
+    </PRODUCT>
+  </PRODUCTS>
+</HISTORY>
